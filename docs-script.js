@@ -121,7 +121,7 @@ function buildSidebar() {
 
         const li = document.createElement("li");
         const a = document.createElement("a");
-        a.href = `#${encodeURIComponent(docPath)}`;
+        a.href = `${encodeURIComponent(docPath)}`;
         a.textContent = title;
         a.style.paddingLeft = `${(level + 1) * 1.2}rem`;
         a.addEventListener("click", (e) => {
@@ -163,7 +163,7 @@ function buildSidebar() {
   } 
 }
 
-function loadDocByPath(path) {
+ function loadDocByPath(path) {
   const index = flatDocs.findIndex(doc => doc.path === path);
   if (index === -1) {
     content.innerHTML = `<p>Document not found: ${path}</p>`;
@@ -171,18 +171,18 @@ function loadDocByPath(path) {
   }
 
   currentIndex = index;
-
-  // Track document view in Google Analytics
+/* 
+  //* / Track document view in Google Analytics
   if (typeof gtag !== 'undefined') {
     gtag('event', 'page_view', {
       page_title: path.split('/').pop().replace(/\.md$|\.pdf$/i, '').replace(/[-_]/g, ' '),
       page_location: window.location.href,
       custom_page_path: path
     });
-  }
+  } */ 
 
   // Handle PDFs
-  if (path.endsWith(".pdf")) {
+/*   if (path.endsWith(".pdf")) {
     const pdfUrl = `${GITHUB_PAGES_BASE}/${path}`; // Use Pages URL instead of RAW
     const filename = path.split("/").pop().replace(/[-_]/g, " ").replace(/\.pdf$/i, "");
     content.innerHTML = `
@@ -190,9 +190,9 @@ function loadDocByPath(path) {
       <p><a href="${pdfUrl}" target="_blank" rel="noopener noreferrer">Open PDF in new tab</a></p>
     `;
     return;
-  }
+  } */
 
-  try {
+  /* try {
     // Use GitHub Pages pre-rendered HTML
     const htmlPath = path.replace('.md', '.html');
     const htmlUrl = `${GITHUB_PAGES_BASE}/${htmlPath}`;
@@ -221,10 +221,10 @@ function loadDocByPath(path) {
       }
 
       // Set the content with proper markdown-body class
-      const docContent = document.getElementById('doc-content');
-      docContent.className = 'markdown-body'; // Always use markdown-body class
+     /*  const docContent = document.getElementById('doc-content');
+      docContent.className = 'markdown-body'; // Always use markdown-body class */
       
-      // Try to preserve more of GitHub's structure by cloning the entire content
+     /*  // Try to preserve more of GitHub's structure by cloning the entire content
       docContent.innerHTML = '';
       const clonedContent = markdownContent.cloneNode(true);
       
@@ -271,15 +271,15 @@ function loadDocByPath(path) {
       });
   } catch (error) {
     console.error('Error in loadDocByPath:', error);
-    content.innerHTML = `<p>Error loading document: ${error.message}</p>`;
-  }
-}
+    content.innerHTML = `<p>Error loading document: ${error.message}</p>`; */
+/*   } */
+ } 
 
-function loadDoc(index) {
+/* function loadDoc(index) {
   if (index >= 0 && index < flatDocs.length) {
     loadDocByPath(flatDocs[index].path);
   }
-}
+} */
 
 function generateTOC() {
   tocList.innerHTML = "";
@@ -478,38 +478,38 @@ document.addEventListener("DOMContentLoaded", () => {
     const targetHref = logoLink.getAttribute("href");
     const fullTargetURL = new URL(targetHref, window.location.origin).href;
 
-    // Compare the full target URL to current location
+   /*  // Compare the full target URL to current location
     if (window.location.href === fullTargetURL) {
       e.preventDefault();
       location.reload();
     }
-    // Otherwise let browser handle normal navigation
+    // Otherwise let browser handle normal navigation */
   });
 });
 
-window.addEventListener("hashchange", () => {
+/* window.addEventListener("hashchange", () => {
   const newPath = decodeURIComponent(location.hash.slice(1));
   if (flatDocs.some(doc => doc.path === newPath)) {
     loadDocByPath(newPath);
   }
-});
+}); */
 
-document.addEventListener("DOMContentLoaded", () => {
+/* document.addEventListener("DOMContentLoaded", () => {
   const navLinksToReload = [
     "docs.html#docs%2Fmanuals-and-cheat-sheets%2Fget-started.md",
     "docs.html#docs%2Fmanuals-and-cheat-sheets%2Fcontribute-to-creator-documentation.md"
   ];
 
-  document.querySelectorAll("nav.nav-links a").forEach(link => {
-    link.addEventListener("click", (e) => {
-      const currentUrl = window.location.href;
-      const linkHref = link.href;
+  // document.querySelectorAll("nav.nav-links a").forEach(link => {
+  //   link.addEventListener("click", (e) => {
+  //     const currentUrl = window.location.href;
+  //     const linkHref = link.href;
 
-      // If clicked link's href is exactly the current page URL, reload page
-      if (linkHref === currentUrl && navLinksToReload.some(nr => linkHref.includes(nr))) {
-        e.preventDefault();
-        window.location.reload();
-      }
-    });
-  });
-});
+  //     // If clicked link's href is exactly the current page URL, reload page
+  //     if (linkHref === currentUrl && navLinksToReload.some(nr => linkHref.includes(nr))) {
+  //       e.preventDefault();
+  //       window.location.reload();
+  //     }
+  //   });
+  // });
+}); */
