@@ -516,7 +516,6 @@ body[data-theme="dark"] #doc-content h6 {
 body[data-theme="dark"] #doc-content code {
   background-color: #1e1e1e;
   color: #ffcc99;
-  padding: 0.2em 0.4em;
   border-radius: 4px;
 }
 
