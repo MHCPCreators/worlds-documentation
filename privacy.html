@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:image" content="images/MHCP_OG_image.jpg"/>
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <title>Privacy Policy - MHCP Creator Made Docs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    /* Privacy page specific styles */
+    .privacy-page {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+      line-height: 1.6;
+      min-height: calc(100vh - 200px);
+    }
+
+    .privacy-container {
+      background: var(--bg-light, #f9fafb);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .privacy-container h1 {
+      color: #333;
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+    }
+
+    .last-updated {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .privacy-container h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: var(--text, #333);
+      font-size: 1.5rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+
+    .privacy-container h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+      color: var(--text, #333);
+      font-size: 1.2rem;
+    }
+
+    .privacy-container ul {
+      margin: 1rem 0;
+      padding-left: 1.5rem;
+    }
+
+    .privacy-container li {
+      margin-bottom: 0.5rem;
+    }
+
+    .privacy-container a {
+      color: var(--primary, #0064E0);
+      text-decoration: underline;
+      transition: color 0.2s ease;
+    }
+
+    .privacy-container a:hover {
+      color: var(--primary-dark, #001E6E);
+    }
+
+    .privacy-container p {
+      margin-bottom: 1rem;
+    }
+
+    /* Dark theme overrides */
+    body[data-theme="dark"] .privacy-container {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    body[data-theme="dark"] .privacy-container h1 {
+      color: #ffffff;
+    }
+
+    body[data-theme="dark"] .privacy-container h2 {
+      color: #ffffff;
+      border-bottom-color: #333;
+    }
+
+    body[data-theme="dark"] .privacy-container h3 {
+      color: #ffffff;
+    }
+
+    body[data-theme="dark"] .last-updated {
+      color: #aaa;
+    }
+
+    body[data-theme="dark"] .privacy-container a {
+      color: #4DA3FF;
+    }
+
+    body[data-theme="dark"] .privacy-container a:hover {
+      color: #0064E0;
+    }
+
+    @media (max-width: 768px) {
+      .privacy-page {
+        margin: 1rem auto;
+        padding: 0 1rem;
+      }
+
+      .privacy-container {
+        padding: 1.5rem;
+      }
+
+      .privacy-container h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body data-theme="dark">    
+
+  <!-- Header - Same as homepage -->
+  <header class="site-header">
+    <div class="left-nav">
+      <div class="logo">
+        <a href="index.html">MHCP Creator Made Docs</a>
+      </div>
+      <nav class="nav-links">
+        <a href="https://mhcpcreators.github.io/worlds-documentation/docs.html#docs%2Fmanuals-and-cheat-sheets%2Fget-started.md">Creator Docs</a>
+        <a href="https://developers.meta.com/horizon-worlds/learn" target="_blank" rel="noopener noreferrer">Meta Docs</a>
+        <a href="https://github.com/MHCPCreators/horizonCreatorManual" target="_blank" rel="noopener noreferrer">Creator Manual</a>
+        <a href="https://communityforums.atmeta.com/t5/Creator-Forum/ct-p/Meta_Horizon_Creator_Forums" target="_blank" rel="noopener noreferrer">Forums</a>
+        <a href="https://mhcpcreators.github.io/worlds-documentation/docs.html#docs%2Fmanuals-and-cheat-sheets%2Fcontribute-to-creator-documentation.md">Contribute</a>
+      </nav>
+    </div>
+    <div class="right-controls">
+      <a href="https://www.youtube.com/@metahorizoncreatorprogram" target="_blank" style="color: #FF0000;">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      <div class="search-container">
+        <button id="search-toggle" aria-label="Toggle Search" class="search-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" focusable="false" class="search-icon">
+            <path d="m416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+          </svg>
+        </button>
+        <ul id="search-suggestions" class="suggestions-list"></ul>
+      </div> 
+      
+      <button class="hamburger" aria-label="Toggle navigation" aria-hidden="true" focusable="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" fill="currentColor">
+          <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Privacy Policy Content -->
+  <div class="privacy-page">
+    <div class="privacy-container">
+      <h1>Privacy Policy</h1>
+      <p class="last-updated"><strong>Last updated:</strong> July 25, 2025</p>
+
+      <h2>1. Information We Collect</h2>
+      <p>This website uses Google Analytics to collect information about how visitors use our site, including:</p>
+      <ul>
+        <li><strong>Usage Data:</strong> Pages visited, time spent, navigation patterns</li>
+        <li><strong>Device Information:</strong> Browser type, operating system, screen resolution</li>
+        <li><strong>Location Data:</strong> General geographic location (city/country level)</li>
+        <li><strong>Referral Information:</strong> How you arrived at our site</li>
+      </ul>
+      
+      <h2>2. How We Use This Information</h2>
+      <p>We use the collected data to:</p>
+      <ul>
+        <li>Understand which documentation is most helpful</li>
+        <li>Improve our content and site performance</li>
+        <li>Analyze usage patterns to enhance user experience</li>
+      </ul>
+
+      <h2>3. Data Sharing</h2>
+      <p>Your data is processed by Google Analytics according to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. We do not sell, trade, or share your personal information with third parties except as described in this policy.</p>
+
+      <h2>4. Cookies and Tracking</h2>
+      <p>This site uses cookies through Google Analytics to:</p>
+      <ul>
+        <li>Distinguish unique visitors</li>
+        <li>Remember your preferences</li>
+        <li>Analyze site traffic patterns</li>
+      </ul>
+      
+      <h2>5. Your Rights (GDPR/CCPA)</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li><strong>Access:</strong> Request information about data we collect</li>
+        <li><strong>Deletion:</strong> Request deletion of your data</li>
+        <li><strong>Opt-out:</strong> Disable tracking (see below)</li>
+        <li><strong>Portability:</strong> Request data in a portable format</li>
+      </ul>
+
+      <h2>6. How to Opt-Out</h2>
+      <p>You can opt out of Google Analytics tracking by:</p>
+      <ul>
+        <li>Installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a></li>
+        <li>Disabling cookies in your browser settings</li>
+        <li>Using browser privacy/incognito mode</li>
+      </ul>
+
+      <h2>7. Data Retention</h2>
+      <p>Google Analytics data is automatically deleted after 26 months. For more information, see <a href="https://support.google.com/analytics/answer/7667196" target="_blank" rel="noopener">Google's data retention policies</a>.</p>
+
+      <h2>8. Children's Privacy</h2>
+      <p>This site is not directed at children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+      <h2>9. International Users</h2>
+      <p>This site is operated from the United States. If you are visiting from outside the US, your data may be transferred to and processed in the US.</p>
+
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated "Last updated" date.</p>
+
+      <h2>11. Contact Us</h2>
+      <p>For questions about this privacy policy or to exercise your rights, please contact us:</p>
+      <ul>
+        <li><strong>GitHub:</strong> <a href="https://github.com/MHCPCreators/worlds-documentation/issues" target="_blank" rel="noopener">Open an issue</a></li>
+        <li><strong>Forums:</strong> <a href="https://communityforums.atmeta.com/t5/Creator-Forum/ct-p/Meta_Horizon_Creator_Forums" target="_blank" rel="noopener">Meta Creator Forums</a></li>
+      </ul>
+
+      <h2>12. Google Analytics Information</h2>
+      <p>For detailed information about how Google Analytics works and processes data, please review:</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        <li><a href="https://support.google.com/analytics/answer/7318509" target="_blank" rel="noopener">How Google Analytics works</a></li>
+        <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses data from sites that use their services</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer - Same as homepage -->
+  <footer class="site-footer">
+    <div class="footer-links">
+      <p>Built by MHCP Creators • 
+        <a href="https://github.com/MHCPCreators/worlds-documentation" target="_blank" rel="noopener noreferrer">GitHub</a> • 
+        <a href="https://communityforums.atmeta.com/t5/Creator-Forum/ct-p/Meta_Horizon_Creator_Forums" target="_blank" rel="noopener noreferrer">Forums</a> •
+        <a href="privacy.html">Privacy Policy</a>
+      </p>
+      <a href="https://www.youtube.com/@metahorizoncreatorprogram" target="_blank" aria-label="Creator Programs YouTube Channel">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR-TRACKING-ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YOUR-TRACKING-ID');
+  </script>
+
+</body>
+</html>
