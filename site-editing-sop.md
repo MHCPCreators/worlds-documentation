@@ -21,6 +21,15 @@ This guide shows MHCP mentors how to add new documentation and edit the homepage
 
 ---
 
+## 🔄 Important: Use Pull Requests
+
+**All changes require review before going live:**
+
+1. **Make changes** on a branch or fork (see [README](README.md))
+2. **Create Pull Request** when ready
+3. **Tag reviewer** for approval
+4. **Changes go live** after merge
+
 ## Adding New Documentation
 
 ### Step 1: Upload Your Markdown File
