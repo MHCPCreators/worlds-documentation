@@ -7,7 +7,7 @@
 
 This session introduces the fundamentals of TypeScript for Meta Horizon Worlds.
 
-➡️ **TypeScript Conventions and Best Practices:** https://developers.meta.com/horizon-worlds/learn/documentation/mhcp-program/community-tutorials/typescript-conventions-and-best-practices-for-horizon-worlds
+➡️ **TypeScript Conventions and Best Practices:** [here](/docs/scripting-concepts-persistence-apis/typescript-conventions-best-practices.md)
 
 ➡️ **Visual Studio Code (Code Editor):** https://code.visualstudio.com/
 

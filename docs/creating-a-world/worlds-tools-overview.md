@@ -15,6 +15,6 @@
 
 <iframe width="665" height="374" src="https://www.youtube.com/embed/-qpzJj9b4J4" title="Worlds Tools Overview (Session 2)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️ **TypeScript Conventions and Best Practices for Meta Horizon Worlds:** TBD LINK 
+➡️ **TypeScript Conventions and Best Practices for Meta Horizon Worlds:** [here](/docs/scripting-concepts-persistence-apis/typescript-conventions-best-practices.md)
 
 ➡️ **GitHub Horizon Creator Manual:** https://github.com/MHCPCreators/horizonCreatorManual

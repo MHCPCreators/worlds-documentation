@@ -3,4 +3,4 @@
 
 <iframe width="890" height="501" src="https://www.youtube.com/embed/6dl5hbpPTVE" title="Worlds TypeScript API 2.0 Tips and Tricks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️ **TypeScript Conventions and Best Practices Guide:** LINK TO GUIDE
+➡️ **TypeScript Conventions and Best Practices Guide:** [here](/docs/scripting-concepts-persistence-apis/typescript-conventions-best-practices.md)
