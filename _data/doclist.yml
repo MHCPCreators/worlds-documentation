@@ -1,0 +1,34 @@
+toc:
+- title: Understanding the desktop editor
+  subfolderitems:
+    - page: Asset spawning & world streaming
+      url: /docs/understanding-the-desktop-editor/asset-spawning-&-world-streaming.html
+    - page: Boost performance top 7 spawning & streaming tricks
+      url: /docs/understanding-the-desktop-editor/boost-performance-top-7-spawning-&-streaming-tricks.html
+    - page: Collaboratively build with shared asset templates
+      url: /docs/understanding-the-desktop-editor/collaboratively-build-with-shared-asset-templates.html
+    - page: improve frame rates and custom asset bloat
+      url: /docs/understanding-the-desktop-editor/improve-frame-rates-and-custom-asset-bloat.html
+    - page: Trace, fix, & optimize world performance issues
+      url: /docs/understanding-the-desktop-editor/trace-fix-&amp-optimize-world-performance-issues.html
+    - page: Worlds desktop editor 101
+      url: /docs/understanding-the-desktop-editor/Worlds-desktop-editor-101.html
+    - page: Worlds desktop tools basics
+      url: /docs/understanding-the-desktop-editor/Worlds-desktop-tools-basics.html
+
+- title: Creating a world
+  subfolderitems:
+
+- title: Generative ai tools
+  subfolderitems:
+
+- title: Getting started with scripting
+  subfolderitems:
+
+- title: Scripting concepts persistence APIs
+  subfolderitems:
+
+- title: Meshes materials import
+  subfolderitems:
+
+- title: Manuals and cheat sheets

@@ -84,7 +84,7 @@ const nextBtn = document.getElementById("next-btn");
 let flatDocs = [];
 let currentIndex = 0;
 
-function buildSidebar() {
+/* function buildSidebar() {
   docList.innerHTML = "";
   flatDocs = [];
 
@@ -161,7 +161,7 @@ function buildSidebar() {
   } else {
     loadDocByPath(flatDocs[0].path);
   } 
-}
+} */
 
  function loadDocByPath(path) {
   const index = flatDocs.findIndex(doc => doc.path === path);
@@ -317,8 +317,8 @@ function generateTOC() {
           behavior: "smooth"
         });
 
-        // Update the URL hash without jumping
-        history.replaceState(null, "", `#${targetId}`);
+       /*  // Update the URL hash without jumping
+        history.replaceState(null, "", `#${targetId}`); */
 
         // Highlight active link
         document.querySelectorAll('#doc-toc a').forEach(el => el.classList.remove("active"));
@@ -339,13 +339,13 @@ function updateButtons() {
   nextBtn.disabled = currentIndex === flatDocs.length - 1;
 }
 
-function updateActiveLink() {
+/* function updateActiveLink() {
   document.querySelectorAll("#doc-list a").forEach((a, i) => {
     a.classList.toggle("active", i === currentIndex);
   });
 }
-
-function autoExpandFolders() {
+ */
+/* function autoExpandFolders() {
   const currentPath = flatDocs[currentIndex].path;
   const folders = currentPath.split("/").slice(1, -1); // skip "docs" and file
   let current = docList;
@@ -369,7 +369,7 @@ function autoExpandFolders() {
       activeFolder.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   }
-}
+} */
 
 prevBtn.addEventListener("click", () => {
   if (currentIndex > 0) loadDoc(currentIndex - 1);
@@ -439,7 +439,7 @@ if (toggleBtn) {
     updateThemeIcon(next);
   });
 }
-
+console.log(test)
 // On page load, use saved theme or default to dark
 document.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme") || "dark";
@@ -474,17 +474,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const logoLink = document.querySelector(".logo a");
   if (!logoLink) return;
 
-  logoLink.addEventListener("click", (e) => {
+  /* logoLink.addEventListener("click", (e) => {
     const targetHref = logoLink.getAttribute("href");
     const fullTargetURL = new URL(targetHref, window.location.origin).href;
-
+ */
    /*  // Compare the full target URL to current location
     if (window.location.href === fullTargetURL) {
       e.preventDefault();
       location.reload();
     }
     // Otherwise let browser handle normal navigation */
-  });
+ /*  }); */
 });
 
 /* window.addEventListener("hashchange", () => {
