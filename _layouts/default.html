@@ -225,16 +225,27 @@
   <a href="https://mhcpcreators.github.io/worlds-documentation/docs.html#docs%2Fmanuals-and-cheat-sheets%2Fcontribute-to-creator-documentation.md">Contribute</a>
 </div>
 <div>
-  <p>New Jekyll TOC</p>
-{% for item in site.data.doclist.toc %}
-    <h3 class="folder-name{% if entry.url == page.url %}open{% endif %}">{{ item.title }}</h3>
-      <ul>
-        {% for entry in item.subfolderitems %}
-          <li class="{% if entry.url == page.url %}active{% endif %}">
-            <a href="{{ entry.url }}">{{ entry.page }}</a></li>
-        {% endfor %}
-      </ul>
-  {% endfor %}
+ 
+
+
+<h2>new toc</h2>
+{% assign all_docs_pages = site.pages | where_exp: "page", "page.path contains 'docs/'" %}
+{% assign doc_folders = all_docs_pages | group_by: "dir" %}
+
+{% for folder in doc_folders %}
+  {% comment %} Sort the pages within the folder before the loop {% endcomment %}
+  {% assign sorted_pages = folder.items | sort: "title" %}
+  
+  {% if folder.name != '/docs/' %}
+    <h3>{{ folder.name | replace: '/docs/', '' | replace: '/', ' ' | capitalize }}</h3>
+    <ul>
+    {% for page in sorted_pages %}
+      <li><a href="{{ page.url | relative_url }}">{{ page.title | default: page.slug }}</a></li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endfor %}
+</ul>
   </div>
   </aside>
 

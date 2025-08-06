@@ -413,8 +413,8 @@ searchInput.addEventListener("input", () => {
   });
 });
 
-buildSidebar();
-
+/* buildSidebar();
+ */
 // Apply default dark theme if no preference is saved
 if (!localStorage.getItem("theme")) {
   document.body.setAttribute("data-theme", "dark");

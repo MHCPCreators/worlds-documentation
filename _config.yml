@@ -1,2 +1,4 @@
 name: MHCP Creator Doc Hub
 theme:
+collections:
+  - docs

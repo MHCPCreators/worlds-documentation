@@ -1,3 +1,7 @@
+---
+title: Interactive laser pen for mobile worlds, build-along
+category: scripting-concepts-persistence-apis
+---
 # Interactive laser pen for mobile worlds: build-along
 *Learn how to build a versatile, interactive laser pen that allows players to draw and point on any surface in your world.* Mentor Shards632 leads this in-depth Build-Along, showing you how to script a tool that works for both VR and mobile players. Discover the power of the FocusedInteraction API to turn any surface into a touch-screen canvas.
 
