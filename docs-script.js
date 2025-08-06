@@ -439,7 +439,6 @@ if (toggleBtn) {
     updateThemeIcon(next);
   });
 }
-console.log(test)
 // On page load, use saved theme or default to dark
 document.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme") || "dark";

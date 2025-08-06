@@ -255,11 +255,11 @@ function loadDocByPath(path) {
 
         generateTOC();
         updateButtons();
-        updateActiveLink();
-        autoExpandFolders();
+/*         updateActiveLink();
+ */        autoExpandFolders();
 
-        history.replaceState(null, "", `#${encodeURIComponent(path)}`);
-        
+/*         history.replaceState(null, "", `#${encodeURIComponent(path)}`);
+ */        
         const contentContainer = document.querySelector("main.content");
         if (contentContainer) {
           contentContainer.scrollTop = 0;
@@ -470,7 +470,7 @@ document.getElementById("sidebar-close").addEventListener("click", () => {
 });
 
 // === Logo Click Always Reloads if URL and Hash Are the Same ===
-document.addEventListener("DOMContentLoaded", () => {
+/* document.addEventListener("DOMContentLoaded", () => {
   const logoLink = document.querySelector(".logo a");
   if (!logoLink) return;
 
@@ -479,21 +479,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const fullTargetURL = new URL(targetHref, window.location.origin).href;
 
     // Compare the full target URL to current location
-    if (window.location.href === fullTargetURL) {
+    /* if (window.location.href === fullTargetURL) {
       e.preventDefault();
       location.reload();
-    }
+    } 
     // Otherwise let browser handle normal navigation
-  });
-});
+  });/*
+}); 
 
-window.addEventListener("hashchange", () => {
+/* window.addEventListener("hashchange", () => {
   const newPath = decodeURIComponent(location.hash.slice(1));
   if (flatDocs.some(doc => doc.path === newPath)) {
     loadDocByPath(newPath);
   }
-});
-
+}); */
+console.log("test2")
 document.addEventListener("DOMContentLoaded", () => {
   const navLinksToReload = [
     "docs.html#docs%2Fmanuals-and-cheat-sheets%2Fget-started.md",
