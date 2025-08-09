@@ -1,80 +1,4 @@
-const GITHUB_PAGES_BASE = "https://mhcpcreators.github.io/worlds-documentation";
-const docs = {
-  "understanding-the-desktop-editor": [
-    "asset-spawning-&-world-streaming.md",
-    "boost-performance-top-7-spawning-&-streaming-tricks.md",
-    "collaboratively-build-with-shared-asset-templates.md",
-    "improve-frame-rates-and-custom-asset-bloat.md",
-    "trace,-fix,-&-optimize-world-performance-issues.md",
-    "Worlds-desktop-editor-101.md",
-    "Worlds-desktop-tools-basics.md",
-  ],
-  "creating-a-world": [
-    "building-your-first-world.md",
-    "create-a-clean-game-HUD-for-Worlds.md",
-    "create-a-versatile-holster-system-in-Worlds.md",
-    "designing-worlds-for-mobile-AMA-session.md",
-    "inventory-systems-unlock-the-power-of-player-inventories.md",
-    "mentor-world-tour-mechanics,--art,--&--gameplay-loop-design.md",
-    "mobile-worlds-crash-course.md",
-    "what-makes-a-hit-mobile-game-4-winning-examples.md",
-    "worlds-tools-overview.md",
-  ],
-  "generative-ai-tools": [
-    "build-a-player-guided-lobby-with-mesh-gen.md",
-    "code-faster-with-copilot-in-the-Worlds-desktop-editor-&-VSCode.md",
-    "genAI-sound-design-in-Worlds-audio-tools-tour.md",
-    "genAI-world-concepts-greyboxing-and-refinements.md",
-    "hands-on-with-GenAI-toolkit-for-Worlds-full-feature-tour.md",
-    "prompt-Meta-AI-in-the-Worlds-desktop-editor.md",
-    "scripting-with-AI-support-GenAI-TypeScript.md",
-    "topology-tune-up-for-GenAI-props-and-sets.md",
-  ],
-  "getting-started-with-scripting": [
-    "15-Worlds-TypeScript-API-2.0-tips-and-tricks.md",
-    "codeblocks-to-TypeScript.md",
-    "json-ppvs-and-versioning.md",
-    "PlayerControls-API-&-focused-interaction-in-Worlds.md",
-    "text-entry-tutorial.md",
-    "TypeScript-basics-beginner-friendly-session-for-Worlds.md",
-    "TypeScript-best-practices-101.md",
-  ],
-  "scripting-concepts-persistence-apis": [
-    "custom-ui/custom-UI-basics-to-boost-interaction.md",
-    "custom-ui/cui-api-introduction.md",
-    "custom-ui/pro-tips-&-tricks-for-a-high-performance-custom-UI.md",
-    "typescript-conventions-best-practices.md",
-    "interactive-laser-pen-for-mobile-worlds-build-along.md",
-  ],
-  "meshes-materials-import": [
-    "3D-modeling-in-Worlds-101.md",
-    "15-blender-tips-for-Horizon-assets.md",
-    "blender-basics-&-UV-unwrapping.md",
-    "custom-skydomes-guide-cinematic-horizons.md",
-    "how-to-use-LODs-to-boost-your-worlds-performance.md",
-    "import-images-and-add-texture-animation.md",
-    "improve-custom-model-imports.md",
-    "masked-texture-3D-asset-challenge-AMA-session.md",
-    "optimize-IWP-assets-for-peak-performance.md",
-    "roads-&-fences-in-Horizon-paths-101.md",
-    "Space Glitters Blender Basics Hotkey Sheet.pdf",
-    "Worlds-asset-build-along-color-palette-&-vertex-tuning.md",
-  ],
-  "manuals-and-cheat-sheets": [
-    "contribute-to-creator-documentation.md",
-    "get-started.md",
-    "how-to-make-your-world-go-viral.md",
-    "MHCP_Publishing_Checklist.pdf",
-    "MHCP_WorldPlanningGuide.pdf",
-    "plan-your-world-game-design-&-monetization-sheet.md",
-    "publishing-checklist-for-Horizon-Worlds.md",
-    "world-building-&-pre-production-guide.md",
-    "worlds-creator-manual-essentials-made-easy.md",
-    "worlds-workarounds.md",
-  ],
-};
-
-const docList = document.getElementById("doc-list");
+/* const docList = document.getElementById("doc-list");
 const content = document.getElementById("doc-content");
 const tocList = document.getElementById("doc-toc");
 const searchInput = document.getElementById("search-input");
@@ -155,15 +79,15 @@ function buildSidebar() {
     docList.appendChild(createFolder(folder, value));
   }
 
-  const hashPath = decodeURIComponent(location.hash.slice(1));
+  /* const hashPath = decodeURIComponent(location.hash.slice(1));
   if (hashPath && flatDocs.some(doc => doc.path === hashPath)) {
     loadDocByPath(hashPath);
   } else {
     loadDocByPath(flatDocs[0].path);
   } 
-}
+} */
 
-function loadDocByPath(path) {
+/*function loadDocByPath(path) {
   const index = flatDocs.findIndex(doc => doc.path === path);
   if (index === -1) {
     content.innerHTML = `<p>Document not found: ${path}</p>`;
@@ -172,178 +96,25 @@ function loadDocByPath(path) {
 
   currentIndex = index;
 
-  // Track document view in Google Analytics
-  if (typeof gtag !== 'undefined') {
-    gtag('event', 'page_view', {
-      page_title: path.split('/').pop().replace(/\.md$|\.pdf$/i, '').replace(/[-_]/g, ' '),
-      page_location: window.location.href,
-      custom_page_path: path
-    });
-  }
-
-  // Handle PDFs
-  if (path.endsWith(".pdf")) {
-    const pdfUrl = `${GITHUB_PAGES_BASE}/${path}`; // Use Pages URL instead of RAW
-    const filename = path.split("/").pop().replace(/[-_]/g, " ").replace(/\.pdf$/i, "");
-    content.innerHTML = `
-      <h2>${filename}</h2>
-      <p><a href="${pdfUrl}" target="_blank" rel="noopener noreferrer">Open PDF in new tab</a></p>
-    `;
-    return;
-  }
-
-  try {
+   try {
     // Use GitHub Pages pre-rendered HTML
     const htmlPath = path.replace('.md', '.html');
     const htmlUrl = `${GITHUB_PAGES_BASE}/${htmlPath}`;
     
-    fetch(htmlUrl)
-      .then(res => {
-        if (!res.ok) {
-          throw new Error(`HTTP ${res.status}`);
-        }
-        return res.text();
-      })
-      .then(githubRenderedHTML => {
-      // Create a temporary element to parse the HTML
-      const tempDiv = document.createElement('div');
-      tempDiv.innerHTML = githubRenderedHTML;
-
-      // Try multiple selectors to find the content
-      const markdownContent = 
-          tempDiv.querySelector('article.markdown-body') ||  // Try GitHub's article first
-          tempDiv.querySelector('.markdown-body') ||        // Then just markdown-body class
-          tempDiv.querySelector('article') ||              // Then any article
-          tempDiv.querySelector('main');                   // Finally try main content
-
-      if (!markdownContent) {
-          throw new Error('Could not find markdown content in the page');
-      }
-
-      // Set the content with proper markdown-body class
-      const docContent = document.getElementById('doc-content');
-      docContent.className = 'markdown-body'; // Always use markdown-body class
-      
-      // Try to preserve more of GitHub's structure by cloning the entire content
-      docContent.innerHTML = '';
-      const clonedContent = markdownContent.cloneNode(true);
-      
-      // Remove the large "worlds-documentation" header that appears at the top of GitHub Pages
-      const repoHeader = clonedContent.querySelector('h1');
-      if (repoHeader && repoHeader.textContent.trim().toLowerCase().includes('worlds-documentation')) {
-        repoHeader.remove();
-      }
-      
-      docContent.appendChild(clonedContent);
-
-      // Fix relative image paths (only for truly relative paths)
-      const basePath = path.split("/").slice(0, -1).join("/");
-      docContent.querySelectorAll("img").forEach(img => {
-          const src = img.getAttribute("src");
-          
-          // Check if it's a relative GitHub Pages path that starts with /worlds-documentation
-          if (src && src.startsWith("/worlds-documentation/")) {
-              // Convert GitHub relative paths to absolute URLs
-              const newSrc = `https://mhcpcreators.github.io${src}`;
-              img.src = newSrc;
-          } else if (src && !src.startsWith("http") && !src.startsWith("data:") && !src.includes("github")) {
-              // Only fix truly relative paths that don't start with http, https, or data
-              const newSrc = `${GITHUB_PAGES_BASE}/${basePath}/${src}`;
-              img.src = newSrc;
-          }
-      });
-
-        generateTOC();
         updateButtons();
-/*         updateActiveLink();
- */        autoExpandFolders();
+        updateActiveLink();
+        autoExpandFolders();
 
-/*         history.replaceState(null, "", `#${encodeURIComponent(path)}`);
- */        
         const contentContainer = document.querySelector("main.content");
         if (contentContainer) {
           contentContainer.scrollTop = 0;
         }
-      })
-      .catch(error => {
-        console.error('Failed to load pre-rendered HTML:', error);
-        content.innerHTML = `<p>Error loading document: ${error.message}</p>`;
-      });
-  } catch (error) {
-    console.error('Error in loadDocByPath:', error);
-    content.innerHTML = `<p>Error loading document: ${error.message}</p>`;
-  }
-}
-
-function loadDoc(index) {
-  if (index >= 0 && index < flatDocs.length) {
-    loadDocByPath(flatDocs[index].path);
-  }
-}
-
-function generateTOC() {
-  tocList.innerHTML = "";
-  const headers = content.querySelectorAll("h2, h3");
-
-  const rightSidebar = document.querySelector(".right-sidebar");
-  if (headers.length === 0) {
-    rightSidebar.style.display = "none";
-    return;
-  } else {
-    rightSidebar.style.display = "block"; // Show if headers exist
-  }
-
-  headers.forEach(header => {
-    if (!header.id) header.id = header.textContent.trim().toLowerCase().replace(/\s+/g, '-');
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-    a.href = `#${header.id}`;
-    a.textContent = header.textContent;
-
-    a.addEventListener("click", (e) => {
-      e.preventDefault();
-
-      // Get the target heading element
-      const targetId = a.getAttribute("href").substring(1);
-      const targetEl = document.getElementById(targetId);
-      const scrollContainer = document.querySelector("main.content");
-
-      if (targetEl && scrollContainer) {
-        const scrollOffset = 80; // Adjust for header height if needed
-        const targetScrollTop = targetEl.offsetTop - scrollContainer.offsetTop - scrollOffset;
-
-        scrollContainer.scrollTo({
-          top: targetScrollTop,
-          behavior: "smooth"
-        });
-
-        // Update the URL hash without jumping
-        history.replaceState(null, "", `#${targetId}`);
-
-        // Highlight active link
-        document.querySelectorAll('#doc-toc a').forEach(el => el.classList.remove("active"));
-        a.classList.add("active");
-
-        // ✅ Scroll TOC item into view within sidebar
-        a.scrollIntoView({ block: "nearest", behavior: "smooth" });
       }
-    });
-
-    li.appendChild(a);
-    tocList.appendChild(li);
-  });
+      
+  } 
 }
 
-function updateButtons() {
-  prevBtn.disabled = currentIndex === 0;
-  nextBtn.disabled = currentIndex === flatDocs.length - 1;
-}
 
-function updateActiveLink() {
-  document.querySelectorAll("#doc-list a").forEach((a, i) => {
-    a.classList.toggle("active", i === currentIndex);
-  });
-}
 
 function autoExpandFolders() {
   const currentPath = flatDocs[currentIndex].path;
@@ -370,14 +141,6 @@ function autoExpandFolders() {
     }
   }
 }
-
-prevBtn.addEventListener("click", () => {
-  if (currentIndex > 0) loadDoc(currentIndex - 1);
-});
-
-nextBtn.addEventListener("click", () => {
-  if (currentIndex < flatDocs.length - 1) loadDoc(currentIndex + 1);
-});
 
 searchInput.addEventListener("input", () => {
   const query = searchInput.value.trim().toLowerCase();
@@ -413,9 +176,6 @@ searchInput.addEventListener("input", () => {
   });
 });
 
-/* buildSidebar();
- */
-// Apply default dark theme if no preference is saved
 if (!localStorage.getItem("theme")) {
   document.body.setAttribute("data-theme", "dark");
 }
@@ -467,7 +227,7 @@ document.getElementById("sidebar-close").addEventListener("click", () => {
   sidebar.classList.remove("open");
   backdrop.classList.remove("show");
   body.classList.remove("sidebar-open");
-});
+}); */
 
 // === Logo Click Always Reloads if URL and Hash Are the Same ===
 /* document.addEventListener("DOMContentLoaded", () => {
@@ -493,13 +253,6 @@ document.getElementById("sidebar-close").addEventListener("click", () => {
     loadDocByPath(newPath);
   }
 }); */
-console.log("test2")
-document.addEventListener("DOMContentLoaded", () => {
-  const navLinksToReload = [
-    "docs.html#docs%2Fmanuals-and-cheat-sheets%2Fget-started.md",
-    "docs.html#docs%2Fmanuals-and-cheat-sheets%2Fcontribute-to-creator-documentation.md"
-  ];
-
   // document.querySelectorAll("nav.nav-links a").forEach(link => {
   //   link.addEventListener("click", (e) => {
   //     const currentUrl = window.location.href;
@@ -511,5 +264,56 @@ document.addEventListener("DOMContentLoaded", () => {
   //       window.location.reload();
   //     }
   //   });
-  // });
-});
+  // }); */
+
+  console.log("test12");
+
+function setupThemeToggle() {
+  const toggleBtn = document.getElementById("theme-toggle");
+  if (!toggleBtn) return;
+  const setTheme = theme => {
+    document.body.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+    toggleBtn.textContent = theme === "dark" ? "🌙" : "☀️";
+  };
+  setTheme(localStorage.getItem("theme") || "dark");
+  toggleBtn.onclick = () => setTheme(document.body.getAttribute("data-theme") === "dark" ? "light" : "dark");
+}
+
+function setupFolderToggle() {
+  document.querySelectorAll('#doc-list .folder-toggle').forEach(toggle =>
+    toggle.onclick = () => {
+      const dropdown = toggle.nextElementSibling;
+      const open = dropdown.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+    }
+  );
+}
+
+function setupDocListSearch() {
+  const searchInput = document.getElementById('search-input');
+  if (!searchInput) return;
+  searchInput.oninput = () => {
+    const query = searchInput.value.trim().toLowerCase();
+    document.querySelectorAll('#doc-list > li').forEach(folderLi => {
+      const folderToggle = folderLi.querySelector('.folder-toggle');
+      const folderName = folderToggle?.querySelector('.folder-name')?.textContent.toLowerCase() || "";
+      let matchFound = false;
+      folderLi.querySelectorAll('a').forEach(link => {
+        const isMatch = link.textContent.toLowerCase().includes(query) || folderName.includes(query) || !query;
+        link.closest('li').style.display = isMatch ? 'block' : 'none';
+        if (isMatch) matchFound = true;
+      });
+      folderLi.style.display = matchFound || folderName.includes(query) || !query ? 'block' : 'none';
+      const dropdown = folderLi.querySelector('.dropdown');
+      if (dropdown) {
+        dropdown.classList.toggle('open', matchFound && query);
+        folderToggle?.classList.toggle('open', matchFound && query);
+      }
+    });
+  };
+}
+
+document.addEventListener('DOMContentLoaded', setupDocListSearch);
+document.addEventListener('DOMContentLoaded', setupFolderToggle);
+document.addEventListener("DOMContentLoaded", setupThemeToggle);

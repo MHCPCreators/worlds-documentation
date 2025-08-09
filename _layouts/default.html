@@ -215,7 +215,39 @@
   <button class="sidebar-close" id="sidebar-close" aria-label="Close sidebar">✕</button>
     <h2>Overview</h2>
 <input type="text" id="search-input" placeholder="Search documents..." />
-    <ul id="doc-list"></ul>
+    <ul id="doc-list">
+{% assign all_docs_pages = site.pages | where_exp: "page", "page.path contains 'docs/'" %}
+{% assign doc_folders = all_docs_pages | group_by: "dir" %}
+
+{% for folder in doc_folders %}
+  {% assign sorted_pages = folder.items | sort: "title" %}
+  {% if folder.name != '/docs/' %}
+    {% assign folder_is_open = false %}
+    {% for doc in sorted_pages %}
+      {% if doc.url == page.url %}
+        {% assign folder_is_open = true %}
+      {% endif %}
+    {% endfor %}
+    <li>
+      <div class="folder-toggle{% if folder_is_open %} open{% endif %}" role="button" tabindex="0">
+        <span class="folder-name">{{ folder.name | replace: '/docs/', '' | replace: '/', ' ' | replace: '-', ' ' | capitalize }}</span>
+        <svg class="chevron-icon" width="12" height="12" viewBox="0 0 320 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+        </svg>  
+      </div>
+      <ul class="dropdown{% if folder_is_open %} open{% endif %}">
+        {% for doc in sorted_pages %}
+          <li>
+            <a href="{{ doc.url | relative_url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title | default: doc.slug }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endif %}
+{% endfor %}
+
+
+    </ul>
     <hr class="mobile-sidebar-divider mobile-only" />
 <div class="mobile-sidebar-nav mobile-only">
   <a href="https://mhcpcreators.github.io/worlds-documentation/docs.html#docs%2Fmanuals-and-cheat-sheets%2Fget-started.md">Creator Docs</a>
@@ -226,25 +258,6 @@
 </div>
 <div>
  
-
-
-<h2>new toc</h2>
-{% assign all_docs_pages = site.pages | where_exp: "page", "page.path contains 'docs/'" %}
-{% assign doc_folders = all_docs_pages | group_by: "dir" %}
-
-{% for folder in doc_folders %}
-  {% comment %} Sort the pages within the folder before the loop {% endcomment %}
-  {% assign sorted_pages = folder.items | sort: "title" %}
-  
-  {% if folder.name != '/docs/' %}
-    <h3>{{ folder.name | replace: '/docs/', '' | replace: '/', ' ' | capitalize }}</h3>
-    <ul>
-    {% for page in sorted_pages %}
-      <li><a href="{{ page.url | relative_url }}">{{ page.title | default: page.slug }}</a></li>
-    {% endfor %}
-    </ul>
-  {% endif %}
-{% endfor %}
 </ul>
   </div>
   </aside>
@@ -252,16 +265,14 @@
   <main class="content">
     <div class="doc-container">
       <div id="doc-content"> {{ content }}</div>
-      <div class="nav-buttons">
-        <button id="prev-btn">← Previous</button>
-        <button id="next-btn">Next →</button>
-      </div>
+
     </div>
   </main>
 
   <aside class="right-sidebar">
     <h3>On this page</h3>
     <ul id="doc-toc"></ul>
+    {% include toc.html html=content %}
   </aside>
   </div>
 
