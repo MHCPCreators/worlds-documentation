@@ -7,6 +7,6 @@
 
 This session provides a deep dive into the PlayerControls API for advanced input handling.
 
-➡️ **Custom Input API:** https://developers.meta.com/horizon-worlds/learn/documentation/create-for-web-and-mobile/typescript-apis-for-mobile/custom-input-api
+➡️ **[Custom Input API](https://developers.meta.com/horizon-worlds/learn/documentation/create-for-web-and-mobile/typescript-apis-for-mobile/custom-input-api)** 
 
-➡️ **The Meta Horizon Worlds Creator Manual:** https://github.com/MHCPCreators/horizonCreatorManual
+➡️ **[The Meta Horizon Worlds Creator Manual](https://github.com/MHCPCreators/horizonCreatorManual)** 

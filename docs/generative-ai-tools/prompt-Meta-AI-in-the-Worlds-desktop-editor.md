@@ -4,4 +4,4 @@
 
 <iframe width="821" height="462" src="https://www.youtube.com/embed/wIoXLM-uoto" title="Build-Along: See How Experts Prompt Meta AI with Tellous" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️ **Learn more about GitHub Copilot:** https://github.com/features/copilot
+➡️ **[Learn more about GitHub Copilot](https://github.com/features/copilot)**

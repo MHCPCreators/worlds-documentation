@@ -6,8 +6,8 @@
 📚 **RESOURCES & DOCUMENTATION**
 This session explores the Generative AI scripting tools available in the desktop editor.
 
-➡️ **Generative AI Creation Code Tool:** https://developers.meta.com/horizon-worlds/learn/documentation/desktop-editor/generative-ai-creation-tools/generative-ai-creation-code-tool
+➡️ **[Generative AI Creation Code Tool](https://developers.meta.com/horizon-worlds/learn/documentation/desktop-editor/generative-ai-creation-tools/generative-ai-creation-code-tool)**
 
-➡️ **TypeScript Conventions and Best Practices:** [here](https://mhcpcreators.github.io/worlds-documentation/docs.html#docs%2Fscripting-concepts-persistence-apis%2Ftypescript-conventions-best-practices.md)
+➡️ **[TypeScript Conventions and Best Practices](../scripting-concepts-persistence-apis/typescript-conventions-best-practices/)**
 
-➡️ **The Meta Horizon Worlds Creator Manual:** https://github.com/MHCPCreators/horizonCreatorManual
+➡️ **[The Meta Horizon Worlds Creator Manual](https://github.com/MHCPCreators/horizonCreatorManual)**

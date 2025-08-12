@@ -7,12 +7,12 @@
 
 Source high-quality HDRIs for your projects from this free library.
 
-➡️ Polyhaven HDRIs: https://polyhaven.com/hdris
+➡️ [Polyhaven HDRIs](https://polyhaven.com/hdris) 
 
 🎨 Use these free online tools to convert your images for the skydome workflow.
 
-➡️ HDRI to Cubemap Converter: https://hdri-to-cubemap-converter.vercel.app/
+➡️ [HDRI to Cubemap Converter](https://hdri-to-cubemap-converter.vercel.app/) 
 
-➡️ PNG to EXR Converter: https://convertio.co/png-exr/
+➡️ [PNG to EXR Converter ](https://convertio.co/png-exr/)
 
 [Assets](https://github.com/MHCPCreators/worlds-documentation/tree/main/docs/meshes-materials-import/assets/custom-skydomes-guide)

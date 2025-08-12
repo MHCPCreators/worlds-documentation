@@ -7,8 +7,8 @@
 
 This session references GenAI tools within the desktop editor and standard 3D modeling workflows.
 
-➡️ **Generative AI Creation Code Tool:** https://developers.meta.com/horizon-worlds/learn/documentation/desktop-editor/generative-ai-creation-tools/generative-ai-creation-code-tool
+➡️ **[Generative AI Creation Code Tool](https://developers.meta.com/horizon-worlds/learn/documentation/desktop-editor/generative-ai-creation-tools/generative-ai-creation-code-tool)** 
 
-➡️ **Use the Asset Library in Meta Horizon Worlds:** https://developers.meta.com/horizon-worlds/learn/documentation/vr-creation/getting-started/using-asset-library
+➡️ **[Use the Asset Library in Meta Horizon Worlds](https://developers.meta.com/horizon-worlds/learn/documentation/vr-creation/getting-started/using-asset-library)** 
 
-➡️ **The Meta Horizon Worlds Creator Manual:** https://github.com/MHCPCreators/horizonCreatorManual
+➡️ **[The Meta Horizon Worlds Creator Manual](https://github.com/MHCPCreators/horizonCreatorManual)** 

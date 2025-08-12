@@ -5,9 +5,9 @@
 
 <iframe width="665" height="374" src="https://www.youtube.com/embed/gNAlyBZqCwk" title="Worlds Tools Overview (Session 1)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️ **Camera API:** https://developers.meta.com/horizon-worlds/learn/documentation/tutorial-worlds/camera-api-examples-tutorial/module-1-setup
+➡️ **[Camera API](https://developers.meta.com/horizon-worlds/learn/documentation/tutorial-worlds/camera-api-examples-tutorial/module-1-setup)** 
 
-➡️ **Asset Templates:** https://developers.meta.com/horizon-worlds/learn/documentation/desktop-editor/assets/asset-templates
+➡️ **[Asset Templates](https://developers.meta.com/horizon-worlds/learn/documentation/desktop-editor/assets/asset-templates)** 
 
 ## Worlds tools overview (Session 2)
 
@@ -15,6 +15,6 @@
 
 <iframe width="665" height="374" src="https://www.youtube.com/embed/-qpzJj9b4J4" title="Worlds Tools Overview (Session 2)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️ **TypeScript Conventions and Best Practices for Meta Horizon Worlds:** [here](https://mhcpcreators.github.io/worlds-documentation/docs.html#docs%2Fscripting-concepts-persistence-apis%2Ftypescript-conventions-best-practices.md)
+➡️ **[TypeScript Conventions and Best Practices for Meta Horizon Worlds:](../scripting-concepts-persistence-apis/typescript-conventions-best-practices/)** 
 
-➡️ **GitHub Horizon Creator Manual:** https://github.com/MHCPCreators/horizonCreatorManual
+➡️ **[GitHub Horizon Creator Manual](https://github.com/MHCPCreators/horizonCreatorManual)** 

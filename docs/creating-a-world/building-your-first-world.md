@@ -3,8 +3,7 @@
 
 <iframe width="890" height="501" src="https://www.youtube.com/embed/ciwZRnxIwLs" title="Building Your First World" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️ **Create Your First World**
-https://developers.meta.com/horizon-worlds/learn/documentation/get-started/create-your-first-world/
+➡️ **[Create Your First World](https://developers.meta.com/horizon-worlds/learn/documentation/get-started/create-your-first-world/)**
 
-➡️ **Build Your First World Creator Challenge**
-https://communityforums.atmeta.com/t5/Events-Competitions/Weekly-Creator-Challenge-1/m-p/1294952/highlight/true#M3
+
+➡️ **[Build Your First World Creator Challenge](https://communityforums.atmeta.com/t5/Events-Competitions/Weekly-Creator-Challenge-1/m-p/1294952/highlight/true#M3)**

@@ -183,21 +183,18 @@ Below we have provided challenges for you to implement on your own. The advanced
 
 **Novice**
 
-Create a House! In the tutorial link below, you will dive into learning how to make a structure that would pair nicely with your Book, Table, and Lamp.
+Create a House! [In this tutorial](https://youtu.be/qIf1je9OnMI?si=lkBmV4sMsJjLZUlZ), you will dive into learning how to make a structure that would pair nicely with your Book, Table, and Lamp.
 
-https://youtu.be/qIf1je9OnMI?si=lkBmV4sMsJjLZUlZ
 
 **Intermediate**
 
-Make a Rocket! This item will explore more tools that will help you create things out of this world!
+[Make a Rocket! This item will explore more tools that will help you create things out of this world!](https://www.youtube.com/watch?v=04HFOAnCGfI&t=66s)
 
-https://www.youtube.com/watch?v=04HFOAnCGfI&t=66s
 
 **Advanced**
 
-The Boss Round- but don't be scared, the step-by-step tutorial linked below will guide you to create a bigger structure that is perfect for Horizon Living spaces. Make sure you give yourself time to complete this one. You won’t regret it!
+The Boss Round- but don't be scared, the [step-by-step tutorial](https://www.youtube.com/watch?v=SzYgg6TeDfo&t=7s)  will guide you to create a bigger structure that is perfect for Horizon Living spaces. Make sure you give yourself time to complete this one. You won’t regret it!
 
-https://www.youtube.com/watch?v=SzYgg6TeDfo&t=7s
 
 ## Further Assistance
 

@@ -6,8 +6,8 @@
 📚 **RESOURCES & DOCUMENTATION**
 This session references the official documentation for the Player Inventory API and In-World Purchases.
 
-➡️ **World Inventory API:** https://developers.meta.com/horizon-worlds/learn/documentation/mhcp-program/monetization/world-inventory-api-guide
+➡️ **[World Inventory API](https://developers.meta.com/horizon-worlds/learn/documentation/mhcp-program/monetization/world-inventory-api-guide)** 
 
-➡️ **In-World Purchase Guide:** https://developers.meta.com/horizon-worlds/learn/documentation/mhcp-program/monetization/meta-horizon-worlds-inworld-purchase-guide
+➡️ **[In-World Purchase Guide](https://developers.meta.com/horizon-worlds/learn/documentation/mhcp-program/monetization/meta-horizon-worlds-inworld-purchase-guide)** 
 
-➡️ **The Meta Horizon Worlds Creator Manual:** https://github.com/MHCPCreators/horizonCreatorManual
+➡️ **[The Meta Horizon Worlds Creator Manual](https://github.com/MHCPCreators/horizonCreatorManual)** 

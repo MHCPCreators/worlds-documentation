@@ -5,7 +5,7 @@ Ready to start your 3D modeling journey in Meta Horizon Worlds? This hands-on cr
 
 <iframe width="890" height="501" src="https://www.youtube.com/embed/SVKI5qsct7s" title="3D Modeling 101: Introduction to Blender (Part 1)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️ **[Basic Hotkey Guide to the Blenderverse](https://mhcpcreators.github.io/worlds-documentation/docs-preview.html#docs%2Fmeshes-materials-import%2FWorlds%20Asset%20Build-Along%20-%20Color%20Palette%20%26%20Vertex%20Tuning.md):**
+➡️ **[Basic Hotkey Guide to the Blenderverse](https://github.com/MHCPCreators/worlds-documentation/blob/main/docs/meshes-materials-import/Space%20Glitters%20Blender%20Basics%20Hotkey%20Sheet.pdf)**
 
 ## 3D Modeling 101: Skyboxes & Environments (Part 2)
 
@@ -21,14 +21,14 @@ Continue your 3D modeling journey and learn to build beautiful, custom landscape
 
 <iframe width="890" height="501" src="https://www.youtube.com/embed/E4_e4Pdb51A" title="3D Modeling 101: Land Modeling &amp; Texture Baking (Part 3)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️ **Landscape Demo Files:** https://github.com/MHCPCreators/worlds-documentation/tree/main/docs/meshes-materials-import/assets/modeling-101/land%20modeling%20and%20texture%20baking
+➡️ **[Landscape Demo Files](https://github.com/MHCPCreators/worlds-documentation/tree/main/docs/meshes-materials-import/assets/modeling-101/land%20modeling%20and%20texture%20baking)** 
 
 ## 3D Modeling 101: Tree Modeling Basics (Part 4)
 **Bring your environments to life by learning the art of tree modeling in this next chapter of our 3D Modeling 101 series for Meta Horizon.** This hands-on Blender tutorial with MHCP mentor SpaceGlitterUnicorn explores two fundamental methods for creating trees: manual extrusion for precise control and the curve-based Skin modifier for rapid, organic shapes. You'll follow a complete workflow that covers everything from trunk and branch creation to optimization, UV unwrapping, and building efficient leaf cards with trim sheets.
 
 <iframe width="890" height="501" src="https://www.youtube.com/embed/E4_e4Pdb51A" title="3D Modeling 101: Land Modeling &amp; Texture Baking (Part 3)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️ **Tree Demo Files:** https://github.com/MHCPCreators/worlds-documentation/tree/main/docs/meshes-materials-import/assets/modeling-101/tree-modeling
+➡️ **[Tree Demo Files](https://github.com/MHCPCreators/worlds-documentation/tree/main/docs/meshes-materials-import/assets/modeling-101/tree-modeling)** 
 ## 3D Modeling 101: Substance Painter Masks & Materials (Part 5)
 
 **Complete your 3D modeling journey by mastering the art of texturing in Substance Painter in Meta Horizon.** This hands-on workshop with **MHCP mentor SpaceGlitterUnicorn** demystifies the entire process. You will learn the practical skills to create professional-grade textures, covering UVs, mesh map baking, and the use of layers, masks, and advanced material properties.

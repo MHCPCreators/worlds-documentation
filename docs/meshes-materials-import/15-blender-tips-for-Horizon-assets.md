@@ -7,6 +7,6 @@
 **📚 RESOURCES & DOCUMENTATION**
 This session features a helpful tool for organizing reference images.
 
-➡️ **PureRef:** https://www.pureref.com/
+➡️ **[PureRef](https://www.pureref.com/)** 
 
 Find the Treasure Chest asset from this session in the Worlds Asset Library

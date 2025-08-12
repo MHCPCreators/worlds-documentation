@@ -4,4 +4,4 @@ Turn your incredible AI concepts into optimized, game-ready assets with this com
 
 **📚 RESOURCES & DOCUMENTATION**
 
-➡️ **Quad Remesher (Retopology Tool)**: https://exoside.com/
+➡️ **[Quad Remesher (Retopology Tool)](https://exoside.com/)**

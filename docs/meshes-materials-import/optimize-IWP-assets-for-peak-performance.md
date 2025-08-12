@@ -3,4 +3,4 @@
 
 <iframe width="890" height="501" src="https://www.youtube.com/embed/CcTjZiF5_PE" title="Optimize IWP Assets for Peak Performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️ **IWP Asset Demo Files:** https://github.com/MHCPCreators/worlds-documentation/tree/main/docs/meshes-materials-import/assets/IWP%20assets
+➡️ **[IWP Asset Demo Files](https://github.com/MHCPCreators/worlds-documentation/tree/main/docs/meshes-materials-import/assets/IWP%20assets)** 

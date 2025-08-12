@@ -7,10 +7,10 @@
 
 This session uses Blender and external tools for asset optimization and texturing.
 
-➡️ **Blender (3D Creation Software):** https://www.blender.org/
+➡️ **[Blender](https://www.blender.org/)** 
 
-➡️ **Coolors (Color Palette Tool):** https://coolors.co/
+➡️ **[Coolors](https://coolors.co/)** 
 
-➡️ **The Meta Horizon Worlds Creator Manual:** https://github.com/MHCPCreators/horizonCreatorManual
+➡️ **[The Meta Horizon Worlds Creator Manual](https://github.com/MHCPCreators/horizonCreatorManual)** 
 
 [Suz Texture Bake Demo](https://github.com/MHCPCreators/worlds-documentation/tree/main/docs/meshes-materials-import/assets/suz-texture-bake-demo)

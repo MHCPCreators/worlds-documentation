@@ -5,6 +5,6 @@ This essential 101 session with *MHCP mentor Shards632* is your guide to TypeScr
 
 <iframe width="665" height="373" src="https://www.youtube.com/embed/G7StcePc_zQ" title="TypeScript Best Practices 101" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️ **TypeScript Conventions and Best Practices for Meta Horizon Worlds:** [here](https://mhcpcreators.github.io/worlds-documentation/docs.html#docs%2Fscripting-concepts-persistence-apis%2Ftypescript-conventions-best-practices.md)
+➡️ **[TypeScript Conventions and Best Practices for Meta Horizon Worlds](../scripting-concepts-persistence-apis/typescript-conventions-best-practices/)**
 
-➡️ **GitHub Horizon Creator Manual:** https://github.com/MHCPCreators/horizonCreatorManual
+➡️ **[GitHub Horizon Creator Manual](https://github.com/MHCPCreators/horizonCreatorManual):**

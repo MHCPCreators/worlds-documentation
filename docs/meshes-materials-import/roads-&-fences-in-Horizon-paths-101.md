@@ -3,7 +3,6 @@ Learn how to efficiently create roads, fences, and even roller coasters for your
 
 <iframe width="890" height="501" src="https://www.youtube.com/embed/5z7GKHk3XMw" title="Roads &amp; Fences in Horizon - Paths 101" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️ **Curves & Paths Assets in video:** https://github.com/MHCPCreators/worlds-documentation/tree/main/docs/meshes-materials-import/assets/paths-101
+➡️ **[Curves & Paths Assets in video](https://github.com/MHCPCreators/worlds-documentation/tree/main/docs/meshes-materials-import/assets/paths-101)** 
 
-➡️ **Best Practices for Custom Models**
-https://developers.meta.com/horizon-worlds/learn/documentation/custom-model-import/creating-custom-models-for-horizon-worlds/best-practices
+➡️ **[Best Practices for Custom Models](https://developers.meta.com/horizon-worlds/learn/documentation/custom-model-import/creating-custom-models-for-horizon-worlds/best-practices)**

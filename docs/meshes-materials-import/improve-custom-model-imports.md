@@ -3,9 +3,9 @@
 
 <iframe width="890" height="501" src="https://www.youtube.com/embed/IwJjuTCAJd0" title="Improve Custom Model Imports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️**Getting Started with Custom Model Import:** https://developers.meta.com/horizon-worlds/learn/documentation/custom-model-import/getting-started-with-custom-model-import
+➡️**[Getting Started with Custom Model Import](https://developers.meta.com/horizon-worlds/learn/documentation/custom-model-import/getting-started-with-custom-model-import)** 
 
-➡️ **Best Practices for Custom Models:**
-https://developers.meta.com/horizon-worlds/learn/documentation/custom-model-import/creating-custom-models-for-horizon-worlds/best-practices
+➡️ **[Best Practices for Custom Models](https://developers.meta.com/horizon-worlds/learn/documentation/custom-model-import/creating-custom-models-for-horizon-worlds/best-practices)**
 
-➡️ **Weekly Creator Challenge #2 Experienced Creators:** https://communityforums.atmeta.com/t5/Events-Competitions/Weekly-Creator-Challenge-2-Experienced-Creators/td-p/1299606
+
+➡️ **[Weekly Creator Challenge #2 Experienced Creators](https://communityforums.atmeta.com/t5/Events-Competitions/Weekly-Creator-Challenge-2-Experienced-Creators/td-p/1299606)** 

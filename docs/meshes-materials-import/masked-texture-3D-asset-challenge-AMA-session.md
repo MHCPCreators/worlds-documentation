@@ -7,10 +7,10 @@
 
 This session uses Procreate for 2D texture creation and Blender for 3D assembly.
 
-➡️ **Procreate (Digital Art App):** https://procreate.com/
+➡️ **[Procreate](https://procreate.com/)** 
 
-➡️ **Blender (3D Creation Software):** https://www.blender.org/
+➡️ **[Blender](https://www.blender.org/)** 
 
-➡️ **The Meta Horizon Worlds Creator Manual:** https://github.com/MHCPCreators/horizonCreatorManual
+➡️ **[The Meta Horizon Worlds Creator Manual](https://github.com/MHCPCreators/horizonCreatorManual)** 
 
-➡️ **Masked Texture Forum Challenge:** https://communityforums.atmeta.com/t5/Events-Competitions/Weekly-Creator-Challenge-6-New-Creator-Challenge-Spring-Assets/m-p/1309075#M259
+➡️ **[Masked Texture Forum Challenge](https://communityforums.atmeta.com/t5/Events-Competitions/Weekly-Creator-Challenge-6-New-Creator-Challenge-Spring-Assets/m-p/1309075#M259)** 

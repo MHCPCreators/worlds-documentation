@@ -17,4 +17,4 @@ This is where your mobile world's interface comes to life. *In Week 2 of our Mob
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yZPCk7Dg-xk?si=AzkfibTGbHl7h0Rn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️ *Utilites shared in this crash course:* https://github.com/MHCPCreators/worlds-documentation/docs/creating-a-world/mobile-crash-course-utils
+➡️ *[Utilites shared in this crash course](https://github.com/MHCPCreators/worlds-documentation/docs/creating-a-world/mobile-crash-course-utils)* 

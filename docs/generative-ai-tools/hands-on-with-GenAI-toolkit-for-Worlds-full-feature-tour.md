@@ -7,8 +7,8 @@
 
 This session explores the full suite of Generative AI tools available in the desktop editor.
 
-➡️ **Generative AI Creation Code Tool:** https://developers.meta.com/horizon-worlds/learn/documentation/desktop-editor/generative-ai-creation-tools/generative-ai-creation-code-tool
+➡️ **[Generative AI Creation Code Tool](https://developers.meta.com/horizon-worlds/learn/documentation/desktop-editor/generative-ai-creation-tools/generative-ai-creation-code-tool)** 
 
-➡️ **Blender (External 3D Tool):** https://www.blender.org/
+➡️ **[Blender](https://www.blender.org/)** 
 
-➡️ **The Meta Horizon Worlds Creator Manual:** https://github.com/MHCPCreators/horizonCreatorManual
+➡️ **T[he Meta Horizon Worlds Creator Manual](https://github.com/MHCPCreators/horizonCreatorManual)** 

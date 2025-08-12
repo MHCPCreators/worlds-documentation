@@ -11,8 +11,8 @@ category: scripting-concepts-persistence-apis
 
 This session provides a deep dive into the Focused Interaction and PlayerControls APIs.
 
-➡️ *FocusedInteraction Class:* https://developers.meta.com/horizon-worlds/reference/2.0.0/core_focusedinteraction
+➡️ *[FocusedInteraction Class](https://developers.meta.com/horizon-worlds/reference/2.0.0/core_focusedinteraction)* 
 
-➡️ *PlayerControls Class:* https://developers.meta.com/horizon-worlds/reference/2.0.0/core_playercontrols
+➡️ *[PlayerControls Class](https://developers.meta.com/horizon-worlds/reference/2.0.0/core_playercontrols)* 
 
-➡️ *The Meta Horizon Worlds Creator Manual:* https://github.com/MHCPCreators/horizonCreatorManual
+➡️ *[The Meta Horizon Worlds Creator Manual](https://github.com/MHCPCreators/horizonCreatorManual)* 

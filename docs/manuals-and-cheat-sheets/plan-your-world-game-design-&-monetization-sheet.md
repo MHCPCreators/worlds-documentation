@@ -7,8 +7,8 @@
 
 This session introduces a comprehensive planning document and other useful project management tools.
 
-➡️ **MHCP Publishing Checklist:** https://developers.meta.com/horizon-worlds/learn/documentation/mhcp-program/focus-sessions/world-publishing-guide
+➡️ **[MHCP Publishing Checklist](https://developers.meta.com/horizon-worlds/learn/documentation/mhcp-program/focus-sessions/world-publishing-guide)** 
 
-➡️ **The Meta Horizon Worlds Creator Manual:** https://github.com/MHCPCreators/horizonCreatorManual
+➡️ **[The Meta Horizon Worlds Creator Manual](https://github.com/MHCPCreators/horizonCreatorManual)** 
 
-➡️ **[World planning document]:**(https://docs.google.com/spreadsheets/d/1kNieauA2CadIXnvvEJiXzwgdLic709KjJUedEW7WF8A/edit?usp=sharing)
+➡️ **[World planning document](https://docs.google.com/spreadsheets/d/1kNieauA2CadIXnvvEJiXzwgdLic709KjJUedEW7WF8A/edit?usp=sharing)**
