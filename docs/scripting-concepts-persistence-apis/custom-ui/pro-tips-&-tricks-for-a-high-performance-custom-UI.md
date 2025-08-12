@@ -1,4 +1,0 @@
-# Pro tips & tricks for a high-performance custom UI
-*Harness the power of the UI binding system to build responsive, lag-free interfaces.* In this technical deep dive, MHCP mentors SeeingBlue and Tellous share their pro tips for building custom UIs that feel great for every player. Learn how to diagnose issues with the Creator Dashboard and implement optimization best practices. 
-
-<iframe width="969" height="554" src="https://www.youtube.com/embed/zaffrPi0E8A" title="Performance Pro UI Unleashed Building Responsive &amp; Performant Interfaces with SeeingBlue and Tellous" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
