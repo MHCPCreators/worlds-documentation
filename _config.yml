@@ -2,4 +2,4 @@ name: MHCP Creator Doc Hub
 theme:
 collections:
   - docs
-permalink: /:path/:basename
+permalink: /:path/:basename/
