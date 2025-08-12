@@ -11,4 +11,4 @@ This session explores the full suite of Generative AI tools available in the des
 
 ➡️ **[Blender](https://www.blender.org/)** 
 
-➡️ **T[he Meta Horizon Worlds Creator Manual](https://github.com/MHCPCreators/horizonCreatorManual)** 
+➡️ **[The Meta Horizon Worlds Creator Manual](https://github.com/MHCPCreators/horizonCreatorManual)** 

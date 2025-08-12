@@ -8,6 +8,6 @@ This session explores the Generative AI scripting tools available in the desktop
 
 ➡️ **[Generative AI Creation Code Tool](https://developers.meta.com/horizon-worlds/learn/documentation/desktop-editor/generative-ai-creation-tools/generative-ai-creation-code-tool)**
 
-➡️ **[TypeScript Conventions and Best Practices](../scripting-concepts-persistence-apis/typescript-conventions-best-practices/)**
+➡️ **[TypeScript Conventions and Best Practices](/docs/scripting-concepts-persistence-apis/typescript-conventions-best-practices/)**
 
 ➡️ **[The Meta Horizon Worlds Creator Manual](https://github.com/MHCPCreators/horizonCreatorManual)**
