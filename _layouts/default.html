@@ -215,7 +215,7 @@
   <button class="sidebar-close" id="sidebar-close" aria-label="Close sidebar">✕</button>
     <h2>Overview</h2>
 <input type="text" id="search-input" placeholder="Search documents..." />
-    {% assign all_docs_pages = site.pages | where_exp: "page", "page.path contains 'docs/'" %}
+ <!--    {% assign all_docs_pages = site.pages | where_exp: "page", "page.path contains 'docs/'" %}
 
 {% comment %}
   Group docs by their first directory (folder)
@@ -274,6 +274,56 @@
         </ul>
       </li>
     {% endif %}
+  {% endfor %}
+</ul> -->
+{% assign all_docs_pages = site.pages | where_exp: "page", "page.path contains 'docs/'" %}
+
+{% assign folder_list = "" | split: "" %}
+{% for doc in all_docs_pages %}
+  {% assign parts = doc.path | split: '/' %}
+  {% assign folder_name = parts[1] %}
+  {% if folder_name %}
+    {% unless folder_list contains folder_name %}
+      {% assign folder_list = folder_list | push: folder_name %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
+<ul id="doc-list">
+  
+  {% for folder in folder_list %}
+   
+    {% assign folder_docs = all_docs_pages | where_exp: "doc", "doc.path contains folder" %}
+
+    {% assign folder_is_open = false %}
+    {% for doc in folder_docs %}
+      {% if doc.url == page.url %}
+        {% assign folder_is_open = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+    <li>
+      <div class="folder-toggle{% if folder_is_open %} open{% endif %}" role="button" tabindex="0">
+        <span class="folder-name">{{ folder | replace: '-', ' ' | capitalize }}</span>
+        <svg class="chevron-icon" width="12" height="12" viewBox="0 0 320 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+        </svg>
+      </div>
+      <ul class="dropdown{% if folder_is_open %} open{% endif %}">
+        {% for doc in folder_docs %}
+          {% assign parts = doc.path | split: '/' %}
+          {% assign item = parts[2] | replace: '.md', '' %}
+          {% if item %}
+            <li>
+              <a href="{{ doc.url | relative_url }}"{% if doc.url == page.url %} class="active"{% endif %}>
+                {{ item | replace: '-', ' ' | capitalize }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
   {% endfor %}
 </ul>
     <hr class="mobile-sidebar-divider mobile-only" />
