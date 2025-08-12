@@ -195,11 +195,11 @@
     <div class="logo"><a href="https://mhcpcreators.github.io/worlds-documentation/" id="logo-link">MHCP Creator Made Docs</a></div>
     <div class="mobile-title mobile-only"><a href="https://mhcpcreators.github.io/worlds-documentation/">Creator Docs</a></div>
     <nav class="nav-links">
-      <a href="https://mhcpcreators.github.io/worlds-documentation/docs.html#docs%2Fmanuals-and-cheat-sheets%2Fget-started.md">Creator Docs</a>
+      <a href="docs/manuals-and-cheat-sheets/get-started.md">Creator Docs</a>
       <a href="https://developers.meta.com/horizon-worlds/learn">Meta Docs</a>
       <a href="https://github.com/MHCPCreators/horizonCreatorManual">Creator Manual</a>
       <a href="https://communityforums.atmeta.com/t5/Creator-Forum/ct-p/Meta_Horizon_Creator_Forums">Forums</a>
-      <a href="https://mhcpcreators.github.io/worlds-documentation/docs.html#docs%2Fmanuals-and-cheat-sheets%2Fcontribute-to-creator-documentation.md">Contribute</a>
+      <a href="docs/manuals-and-cheat-sheets/contribute-to-creator-documentation/">Contribute</a>
     </nav>
     </div>
           <div class="right-controls">
@@ -221,6 +221,7 @@
 
 {% for folder in doc_folders %}
   {% assign sorted_pages = folder.items | sort: "title" %}
+  {% assign folder_name = folder.name | remove_first: '/docs/' | split: '/' | last | replace: '-', ' ' | capitalize %}
   {% if folder.name != '/docs/' %}
     {% assign folder_is_open = false %}
     {% for doc in sorted_pages %}
@@ -230,7 +231,7 @@
     {% endfor %}
     <li>
       <div class="folder-toggle{% if folder_is_open %} open{% endif %}" role="button" tabindex="0">
-        <span class="folder-name">{{ folder.name | replace: '/docs/', '' | replace: '/', ' ' | replace: '-', ' ' | capitalize }}</span>
+        <span class="folder-name">{{ folder_name }}</span>
         <svg class="chevron-icon" width="12" height="12" viewBox="0 0 320 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
         </svg>  
@@ -250,11 +251,11 @@
     </ul>
     <hr class="mobile-sidebar-divider mobile-only" />
 <div class="mobile-sidebar-nav mobile-only">
-  <a href="https://mhcpcreators.github.io/worlds-documentation/docs.html#docs%2Fmanuals-and-cheat-sheets%2Fget-started.md">Creator Docs</a>
+  <a href="docs/manuals-and-cheat-sheets/get-started/">Creator Docs</a>
   <a href="https://developers.meta.com/horizon-worlds/learn">Meta Docs</a>
   <a href="https://github.com/MHCPCreators/horizonCreatorManual">Creator Manual</a>
   <a href="https://communityforums.atmeta.com/t5/Creator-Forum/ct-p/Meta_Horizon_Creator_Forums">Forums</a>
-  <a href="https://mhcpcreators.github.io/worlds-documentation/docs.html#docs%2Fmanuals-and-cheat-sheets%2Fcontribute-to-creator-documentation.md">Contribute</a>
+  <a href="docs/manuals-and-cheat-sheets/contribute-to-creator-documentation/">Contribute</a>
 </div>
 <div>
  
@@ -264,7 +265,7 @@
 
   <main class="content">
     <div class="doc-container">
-      <div id="doc-content"> {{ content }}</div>
+      <div id="doc-content" class="markdown-body"> {{ content }}</div>
 
     </div>
   </main>
