@@ -5,8 +5,8 @@
 
 📚 **RESOURCES & DOCUMENTATION**
 
-➡️ **Community Forum:** https://communityforums.atmeta.com/t5/Creator-Forum/ct-p/Meta_Horizon_Creator_Forums
+➡️ **[Community Forum](https://communityforums.atmeta.com/t5/Creator-Forum/ct-p/Meta_Horizon_Creator_Forums)** 
 
-➡️ **Meta Documentation:** https://developers.meta.com/horizon-worlds/learn
+➡️ **[Meta Documentation](https://developers.meta.com/horizon-worlds/learn)** 
 
-➡️ **Download Worlds desktop editor:** https://developers.meta.com/horizon-worlds/advanced-tools
+➡️ **[Download Worlds desktop editor](https://developers.meta.com/horizon-worlds/advanced-tools)** 

@@ -5,6 +5,6 @@
 
 <iframe width="821" height="462" src="https://www.youtube.com/embed/Q18hoNIK1Kk" title="Build-Along: Team Up! Smarter Collabs with Asset Templates with PigeonNo12 &amp; SpaceGlitterUnicorn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️ **Asset Templates:** https://developers.meta.com/horizon-worlds/learn/documentation/desktop-editor/assets/asset-templates
+➡️ **[Asset Templates](https://developers.meta.com/horizon-worlds/learn/documentation/desktop-editor/assets/asset-templates)** 
 
-➡️ **Use Assets from Tutorials:** https://developers.meta.com/horizon-worlds/learn/documentation/tutorial-worlds/getting-started-with-tutorials/use-assets-from-tutorials
+➡️ **[Use Assets from Tutorials](https://developers.meta.com/horizon-worlds/learn/documentation/tutorial-worlds/getting-started-with-tutorials/use-assets-from-t):** 

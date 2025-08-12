@@ -6,4 +6,4 @@
 
  <iframe width="821" height="462" src="https://www.youtube.com/embed/LUptEBcncsI" title="Workshop: Trace it! World Performance Optimization with PigeonNo12" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️ **Analyzing trace data with Perfetto:** https://developers.meta.com/horizon-worlds/learn/documentation/performance-best-practices-and-tooling/performance-tools/analyzing-trace-data-with-perfetto
+➡️ **[Analyzing trace data with Perfetto](https://developers.meta.com/horizon-worlds/learn/documentation/performance-best-practices-and-tooling/performance-tools/analyzing-trace-data-with-perfetto)** 

@@ -8,6 +8,5 @@ category: desktop-editor
 
 📚 **RESOURCES & DOCUMENTATION**
 
-**➡️ Spawning & Despawning Assets:** https://developers.meta.com/horizon-worlds/learn/documentation/vr-creation/scripting/spawn-despawn-assets-horizon-worlds
-
-**➡️ World Streaming:** https://developers.meta.com/horizon-worlds/learn/documentation/typescript/asset-spawning/world-streaming
+**➡️ [Spawning & Despawning Assets](https://developers.meta.com/horizon-worlds/learn/documentation/vr-creation/scripting/spawn-despawn-assets-horizon-worlds)**
+**➡️ [World Streaming](https://developers.meta.com/horizon-worlds/learn/documentation/typescript/asset-spawning/world-streaming)** 
