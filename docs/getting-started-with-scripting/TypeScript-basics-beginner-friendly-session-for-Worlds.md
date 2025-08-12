@@ -7,7 +7,7 @@
 
 This session introduces the fundamentals of TypeScript for Meta Horizon Worlds.
 
-➡️ **[TypeScript Conventions and Best Practices](/docs/scripting-concepts-persistence-apis/typescript-conventions-best-practices/)** 
+➡️ **[TypeScript Conventions and Best Practices](../../../docs/scripting-concepts-persistence-apis/typescript-conventions-best-practices/)** 
 
 ➡️ **[Visual Studio Code](https://code.visualstudio.com/)**
 
