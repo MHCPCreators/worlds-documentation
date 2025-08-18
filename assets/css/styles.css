@@ -31,7 +31,6 @@ body {
   z-index: 1000;
   flex-wrap: nowrap;
   flex-direction: row;
-  width: 97%;
   border-bottom: 1px solid #ccc;
   padding: 1rem 2rem;
 }
@@ -217,6 +216,12 @@ main.content {
   display: none;
 }
 
+
+/* ========================================
+   TOC SIDEBAR
+======================================== */
+
+
 /* ========================================
    FOLDER NAVIGATION
 ======================================== */
@@ -305,7 +310,6 @@ span.folder-name::first-letter {
   width: 220px;
   background-color: #fafafa;
   padding: 1rem;
-  overflow-y: auto;
   border-left: 1px solid #ddd;
   position: sticky;
   top: 0;
@@ -318,21 +322,16 @@ span.folder-name::first-letter {
   margin-bottom: 0.5rem;
 }
 
-.right-sidebar ul {
-  list-style: none;
-  padding: 0;
+.right-sidebar ol {
   font-size: 0.875rem;
-}
-
-.right-sidebar li {
-  margin: 0.25rem 0;
+  padding-inline-start: 15px;
 }
 
 .right-sidebar a {
   text-decoration: none;
   color: black;
   font-weight: 300;
-  padding: 0.25rem 0.5rem;
+  padding: 0.1rem;
   display: block;
   border-radius: 4px;
 }
