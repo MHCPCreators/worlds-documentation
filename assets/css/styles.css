@@ -306,14 +306,19 @@ span.folder-name::first-letter {
 /* ========================================
    RIGHT SIDEBAR (TOC)
 ======================================== */
+#right-sidebar-toc{
+  word-wrap: break-word;
+}
 .right-sidebar {
-  width: 220px;
+  width: 22%;
+  max-width: 300px;
   background-color: #fafafa;
   padding: 1rem;
   border-left: 1px solid #ddd;
   position: sticky;
   top: 0;
   max-height: 100vh;
+  overflow-y: scroll;
 }
 
 .right-sidebar h3 {
