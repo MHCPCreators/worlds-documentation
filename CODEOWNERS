@@ -1,8 +1,9 @@
 # The default owners of all files in the repo
 # - MHCPCreators/mentors _should_ have all of the currently active mentors
-# - adding wafflecopters and PigeonNo12 as 'emeritus' mentors
 # - adding llamahunter as a 'safety net' in case something goes wonky w/ MHCPCreators/mentors
-* @llamahunter @MHCPCreators/mentors @wafflecopters @PigeonNo12
+# - wafflecopters and PigeonNo12 are 'emeritus' mentors, but to avoid spamming them with PR
+#   reviews, not adding them as codeowners.
+* @llamahunter @MHCPCreators/mentors
 
 # if we want to provide limited ownership grants for sub-parts of the repo (e.g. /docs)
 # we would add the names of those repo collaborators here
