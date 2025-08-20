@@ -246,12 +246,14 @@
       </div>
       <ul class="dropdown{% if folder_is_open %} open{% endif %}">
         {% for doc in folder_docs %}
-          {% assign parts = doc.path | split: '/' %}
-          {% assign item = parts[2] | replace: '.md', '' %}
+        
+         <!--  {% assign parts = doc.path | split: '/' %}
+          {% assign item = parts[2] | replace: '.md', '' %} -->
           {% if item %}
             <li>
               <a href="{{ doc.url | relative_url }}"{% if doc.url == page.url %} class="active"{% endif %}>
-                {{ item | replace: '-', ' ' | capitalize }}
+                <!-- {{ item | replace: '-', ' ' | capitalize }} -->
+                  {{doc.title}}
               </a>
             </li>
           {% endif %}
