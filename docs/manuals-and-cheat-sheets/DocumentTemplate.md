@@ -1,5 +1,7 @@
-<!-- The title of your document -->
 # Documentation Competition Template
+[View the full template with commented instructions on GitHub](https://github.com/MHCPCreators/worlds-documentation/blob/main/docs/manuals-and-cheat-sheets/DocumentTemplate.md?plain=1)
+<!-- The title of your document -->
+# Title of Creator Made Documentation
 
 <!-- Put your name, at least your Horizon Name, as the author -->
 Richard Lee (Shards632)  
