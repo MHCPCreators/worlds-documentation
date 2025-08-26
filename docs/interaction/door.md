@@ -268,11 +268,6 @@ class Door extends hz.Component<typeof Door> {
       console.error("Door hinge not set!");
       return;
     }
-    const trigger = this.props.trigger?.as(hz.TriggerGizmo);
-    if(!trigger) {
-      console.error("Door trigger not set!");
-      return;
-    }
 
     // Radians are easier to work with in code, but degrees are more understandable in-editor
     // We can have our cake and eat it too by converting degrees -> radians on start
@@ -282,10 +277,13 @@ class Door extends hz.Component<typeof Door> {
     // Make sure we have a consistent starting state
     this.updateDoorRotation();
     
-    // Listen for when players interact with our door
-    this.connectCodeBlockEvent(trigger, hz.CodeBlockEvents.OnPlayerEnterTrigger, (player)=> {
-      this.toggle();
-    });
+    // Listen for when players interact with our door if we have a trigger set
+    const trigger = this.props.trigger?.as(hz.TriggerGizmo);
+    if(trigger) {
+        this.connectCodeBlockEvent(trigger, hz.CodeBlockEvents.OnPlayerEnterTrigger, (player)=> {
+          this.toggle();
+        });
+    }
   }
 
   private updateDoorRotation() {
