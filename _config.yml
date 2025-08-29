@@ -3,3 +3,4 @@ theme:
 collections:
   - docs
 permalink: /:path/:basename/
+baseurl: /worlds-documentation
