@@ -109,7 +109,7 @@ Now before we can get to scripting, we also need to set up a persistent variable
 
 The IWPSeller gizmo does provide a method to get how long it's been since the purchase of an item, but this doesn't account for multiple purchase, so we need to track
 expiration separately to make sure our users get their money's worth if they purchase multiple months at once. (There is currently no way to prevent multiple 
-purchases of consumables, so we do have to account for multiple)
+purchases of consumables, so we do have to account for multiple). Our solution to this is calculating the combined expiration time of each purchased consumable. Meaning that purchasing 3 separate subscriptions will result in a 90 day expiration instead of three simultaneous 30 day subscriptions.
 
 To create our expiration variable, go to Systems -> Variable Groups and create a new group for our VIP room. Then within that group create a new "Player Persistent Variable" of type "Number".
 
