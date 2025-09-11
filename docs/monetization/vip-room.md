@@ -1,5 +1,7 @@
 # Making an Exclusive VIP Room For Your World
 
+![VIP Room Thumbnail](media/thumb.png)
+
 A very common pattern world creators will use to monetize is to provide a world for free, but then gate certain rooms or features behind one-time purchases or subscriptions.
 
 In this tutorial we'll explore how to set up a room that will only be accessible through in-world microtransactions.
@@ -21,6 +23,9 @@ For my examples I'm going to use the door we built in [this tutorial](../interac
 
 You don't need to go through the entire tutorial (though it's recommended when you have the time), if you want to follow along just 
 go through the scene setup then copy and set up the script at the end of the tutorial.
+
+![Picture of Door Setup](media/at-door.png)
+![Picture of Room Interior](media/in-room.png)
 
 ## One-Time Purchase Gated Access
 
