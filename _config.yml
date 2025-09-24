@@ -4,3 +4,5 @@ collections:
   - docs
 permalink: /:path/:basename/
 baseurl: /worlds-documentation
+plugins:
+  - jekyll-sitemap
