@@ -6,9 +6,9 @@ When contributing documentation, please ensure your additions or edits fit into 
 
 ## 1\. Prerequisites
 
-* A GitHub account.
-* Familiarity with Markdown syntax.
-* A basic understanding of what forking a repository means.
+- A GitHub account.
+- Familiarity with Markdown syntax.
+- A basic understanding of what forking a repository means.
 
 ## 2\. Procedure
 
@@ -48,35 +48,36 @@ On your main branch, add or edit documentation files. **Crucially, place your fi
 
 **Documentation Categories:**
 
-| Category Folder Name | Description | Challenge Category |
-| :---- | :---- | :---- |
-| `lighting-colliders-audio` | Details lighting techniques, collider setup for interaction, and audio integration. | Best Lighting |
-| `asset-library-import` | Focuses on using the asset library, templates, and managing assets. | Best Creating and Importing Assets and Best Using Asset Templates |
-| `monetization` | Discusses monetization options, in-world purchases, and player progression. | Best Monetization |
-| `performance` | Addresses performance optimization, debugging, and best practices. | Best Optimizing World Performance |
-| `npcs` | Details NPC creation, AI, and behavior. | Best NPC Enemy Wave |
+| Category Folder Name       | Description                                                                         | Challenge Category                                                |
+| :------------------------- | :---------------------------------------------------------------------------------- | :---------------------------------------------------------------- |
+| `lighting-colliders-audio` | Details lighting techniques, collider setup for interaction, and audio integration. | Best Lighting                                                     |
+| `asset-library-import`     | Focuses on using the asset library, templates, and managing assets.                 | Best Creating and Importing Assets and Best Using Asset Templates |
+| `monetization`             | Discusses monetization options, in-world purchases, and player progression.         | Best Monetization                                                 |
+| `performance`              | Addresses performance optimization, debugging, and best practices.                  | Best Optimizing World Performance                                 |
+| `npcs`                     | Details NPC creation, AI, and behavior.                                             | Best NPC Enemy Wave                                               |
 
 Before beginning, verify you are in **your forked repository** and on the branch created for these specific changes.
 
 To **add a new file**:
 
-   1. Using the table above, identify the **appropriate category folder** for your new file (e.g., `docs/npcs/`).
-   1. Navigate to the folder.
-   1. Click the **"Add file"** button and select either **"Create new file"** or **"Upload files"**.
-     ![](images/image8.png)
-      * If creating a new file:
-         * Enter the name for your file in the name field (e.g., `new-guide.md`).
-         * Write or paste your Markdown content into the editor.
-            ![](images/image6.png)
-      * If uploading files:
-         * Drag and drop your file(s) or use the file chooser to select them.
+1.  Using the table above, identify the **appropriate category folder** for your new file (e.g., `docs/npcs/`).
+1.  Navigate to the folder.
+1.  Click the **"Add file"** button and select either **"Create new file"** or **"Upload files"**.
+    ![](images/image8.png)
+    - If creating a new file:
+      - Enter the name for your file in the name field (e.g., `new-guide.md`).
+      - Write or paste your Markdown content into the editor.
+        ![](images/image6.png)
+    - If uploading files:
+      - Drag and drop your file(s) or use the file chooser to select them.
 
 To **edit an existing file**:
-   1. Navigate to the file you want to edit within your fork.
-   1. Click the **pencil icon** (which usually says "Edit this file") on the right side of the file view.
-   1. Make your desired changes in the editor.
 
-      ![](images/image1.png)
+1.  Navigate to the file you want to edit within your fork.
+1.  Click the **pencil icon** (which usually says "Edit this file") on the right side of the file view.
+1.  Make your desired changes in the editor.
+
+    ![](images/image1.png)
 
 #### 2.2.2. Linking to YouTube Videos
 
@@ -90,7 +91,6 @@ If you are creating a short-form video to accompany your written tutorial, uploa
 4. Copy and paste the Embed Video code to the File Editor in GitHub
    ![](images/image5.png)
 
-
 **Note:** No preview will be available because iframe is not supported in markdown. Please use the GitHub
 
 #### 2.2.3. Commit Your Changes (in Your Fork)
@@ -100,8 +100,8 @@ Save your work by committing the changes to your branch in your fork.
 1. After creating, uploading, or editing a file **in your fork**, press the **"Commit changes"** button.
    ![](images/image9.png)
 2. **Commit message:** Write a clear and concise commit message.
-   * The first line should be a short summary (max 50-72 characters is a good guideline), e.g., `docs: New tutorial on lighting`.
-   * *Good commit message practice:* Start with a prefix indicating the type of change (e.g., `docs:`, `fix:`), followed by a concise description.
+   - The first line should be a short summary (max 50-72 characters is a good guideline), e.g., `docs: New tutorial on lighting`.
+   - _Good commit message practice:_ Start with a prefix indicating the type of change (e.g., `docs:`, `fix:`), followed by a concise description.
 3. Ensure the option **"Commit directly to the `main` branch"** is selected. This refers to the branch in your fork.
 4. Click the green **"Commit changes"** button.
 
@@ -113,22 +113,23 @@ You are almost done! The Pull Request (PR) submission process is how you propose
 2. You should see a prominent notification bar for your recently pushed branch, often with a **"Contribute"** button. Click this button.
    ![](images/image13.png)
 3. If you don't see this prompt:
-   * Go to the **"Pull requests"** tab of **your forked repository** and click **"New pull request"**.
+
+   - Go to the **"Pull requests"** tab of **your forked repository** and click **"New pull request"**.
      ![](images/image4.png)
-   * Alternatively, go to the **"Pull requests"** tab of the **original (upstream) repository** and click **"New pull request"**. You may then need to click "compare across forks".
+   - Alternatively, go to the **"Pull requests"** tab of the **original (upstream) repository** and click **"New pull request"**. You may then need to click "compare across forks".
 
 4. You will be taken to the **"Open a pull request"** page. Carefully review the branches:
    ![](images/image3.png)
-   * **Base repository:** This should be the **original (upstream) repository** you forked from (e.g., `original-owner/repository-name`).
-   * **Base branch:** This is the branch in the original repository you want your changes merged into (commonly `main` or `master`).
-   * **Head repository:** This should be **your fork** (e.g., `your-username/repository-name`).
-   * **Compare branch** (or **Head branch**): This should be the branch in your fork that contains your changes (e.g., `<your-branch-name>`).
-   * GitHub usually selects these correctly if you used the "Contribute" button from your fork. If not, use the dropdown menus to select the correct repositories and branches.
+   - **Base repository:** This should be the **original (upstream) repository** you forked from (e.g., `original-owner/repository-name`).
+   - **Base branch:** This is the branch in the original repository you want your changes merged into (commonly `main` or `master`).
+   - **Head repository:** This should be **your fork** (e.g., `your-username/repository-name`).
+   - **Compare branch** (or **Head branch**): This should be the branch in your fork that contains your changes (e.g., `<your-branch-name>`).
+   - GitHub usually selects these correctly if you used the "Contribute" button from your fork. If not, use the dropdown menus to select the correct repositories and branches.
 5. **Title:** Write a clear and descriptive title for your PR and incluce the challenge category in your title. The main commit message is often a good starting point.
-   * Example: `lighting: Cool uses of Dynamic Lighting`
+   - Example: `lighting: Cool uses of Dynamic Lighting`
 6. **Description:** In the text area, provide a summary of your changes.
-   * When submitting your tutorial for the first time, list the tutorial category and what your tutorial covers.
-   * When updating an existing tutorial, describe the changes.
+   - When submitting your tutorial for the first time, list the tutorial category and what your tutorial covers.
+   - When updating an existing tutorial, describe the changes.
 7. Click **"Create pull request"**. This submits your changes for review to the maintainers of the original repository.
    ![](images/image7.png)
 
