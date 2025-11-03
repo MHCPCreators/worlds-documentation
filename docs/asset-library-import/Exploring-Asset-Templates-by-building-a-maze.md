@@ -1,5 +1,5 @@
 
-# Exploring Asset Templates: Smarter World Building
+# Exploring Asset Templates by building a maze: Smarter World Building
 
 Asset Templates are a powerful system for reusing and updating content across multiple places in your world. If you’ve worked in Unity before, you can think of them as similar to **Prefabs** ([Unity Prefabs Documentation](https://docs.unity3d.com/Manual/CreatingPrefabs.html)) — reusable asset definitions that can be instantiated, updated, and overridden with specific settings.
 (If you don't come from a Unity background then you will still find this tutorial useful).
