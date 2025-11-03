@@ -416,7 +416,7 @@ Add:
 
 7. Call the function **scheduleNextSkyColour** within the method. 
 
-This allows the method to continuosly run by calling itself from within the function.
+This allows the method to continuously run by calling itself from within the function.
 
 
 

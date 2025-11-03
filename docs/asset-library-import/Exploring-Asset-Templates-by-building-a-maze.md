@@ -465,7 +465,7 @@ this.setUp();
                cellIndex++;
        }
     }
-        console.log('SimpleSpawn: spawnning complete. objList size='+this.cellList.length);
+        console.log('SimpleSpawn: spawning complete. objList size='+this.cellList.length);
 }
         
    ```
@@ -831,13 +831,13 @@ Add:
 
    - It creates a random number based on the cell board.
 
-   - Checks the cellTemplate children exists.
+   - Checks the cellTemplate children exist.
 
    - loops through all the children for the cell entity and finds the **cellSpawnRefPosition** that you created.
 
    - Sets the coin to this position.
     
-   - Below the walls set up in the **BuildBoard** function  call **setupCoinPosition** function
+   - Below the walls set up in the **BuildBoard** function, call the **setupCoinPosition** function
 
 
 ```typescript
@@ -986,7 +986,7 @@ class BoardController extends Component<typeof BoardController> {
                cellIndex++;
        }
     }
-        console.log('SimpleSpawn: spawnning complete. objList size='+this.cellList.length);
+        console.log('SimpleSpawn: spawning complete. objList size='+this.cellList.length);
 }
 
 setupCoinPositions()
