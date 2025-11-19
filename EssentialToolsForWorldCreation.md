@@ -10,9 +10,9 @@ author: Quadra01
 ## Introduction
 In this tutorial, you will learn:
 
-1. **Lighting Techniques** – Different types of lights and methods to create atmosphere
-2. **Collider Setup for Interaction** – Defining object boundaries to enable accurate player interaction
-3. **Audio Integration** – Adding sound effects to enhance the experience
+1. **Lighting Techniques** – Different types of lights and methods to create atmosphere  
+2. **Collider Setup for Interaction** – Defining object boundaries to enable accurate player interaction  
+3. **Audio Integration** – Adding sound effects to enhance the experience  
 
 ***BONUS:*** Level Design 101
 
@@ -24,25 +24,10 @@ Methods to control **brightness**, **color**, and **atmosphere**, helping set th
 
 ---
 
-### 1.1 How to Access Light Gizmos
-1) Open the **Build** popup from the buttons at the top left and click on **Gizmos**.
+### 1.1 Light Types
 
-    <img width="379" height="200" alt="101" src="https://github.com/user-attachments/assets/0d5d9bd2-af30-476e-8918-54a294a85819" />
-
-2) In the opened Gizmos panel, type **Light** to access all light-related Gizmos.
-
-    <img width="242" height="200" alt="102" src="https://github.com/user-attachments/assets/6c51ee43-65dc-4e02-8741-9a7b56ebb85c" />
-
-3) **Drag** any Gizmo component and **drop** it at any position in the world.
-
-    <img width="157" height="150" alt="103" src="https://github.com/user-attachments/assets/e4707a2f-3fea-41a9-9bc8-72544e198d70" />
-
----
-
-### 1.2 Light Types
-
-#### 1.2.1 Environment Gizmo
-Allows changing the sky texture, scene brightness, fog, and VOIP settings. 
+#### 1.1.1 Environment Gizmo
+Allows changing the sky texture, scene brightness, fog, and VOIP settings.  
 **Variables** can be accessed from the Behavior section in the Properties popup on the right side of the screen while the object is selected.
 
 - **Active**: Sets whether it is enabled or disabled. When disabled, the world reverts to the default environment settings and Gizmo turns gray.
@@ -90,24 +75,24 @@ Allows changing the sky texture, scene brightness, fog, and VOIP settings.
   <img width="200" height="175" alt="Frame 28" src="https://github.com/user-attachments/assets/7cff783b-2cb8-43d9-a030-89f7a72023b2" /> <img width="200" height="175" alt="Frame 29" src="https://github.com/user-attachments/assets/6327cfa2-dabf-4ce0-af07-fa04e7ca07f9" />
 
 - **VOIP Settings**: Sets how and at what distance players can hear each other.
-    - **Mute**: Completely silent, no voice in or out.
-    - **Whisper**: Very short range, only very close players hear.
-    - **Nearby**: Positional 3D voice, fades with distance.
-    - **Default**: Standard voice mode, behaves like Nearby unless changed.
-    - **Environment**: Follows world’s voice zones.
-    - **Extended**: Same as Nearby but with a wider hearing/talking range.
+    - **Mute**: Completely silent, no voice in or out.  
+    - **Whisper**: Very short range, only very close players hear.  
+    - **Nearby**: Positional 3D voice, fades with distance.  
+    - **Default**: Standard voice mode, behaves like Nearby unless changed.  
+    - **Environment**: Follows world’s voice zones.  
+    - **Extended**: Same as Nearby but with a wider hearing/talking range.  
     - **Global** Voice reaches everyone in the world, no distance limit.
 
 ---    
 
-#### 1.2.2 How to Import Custom Skybox
+#### 1.1.2 How to Import Custom Skybox
 1) Click My Assets in the Asset Library, select the folder that Skydome will be created, then click **Add New** at the top and choose Skydome to import its source files.
 
     <img width="267" height="200" alt="import_sky_1" src="https://github.com/user-attachments/assets/2b41a6c4-cbc1-4ffa-a13a-aab2fa49d063" /> <img width="267" height="200" alt="import_sky_2" src="https://github.com/user-attachments/assets/4865480c-b7d7-438e-9603-3f0b61c190f4" />
 
 2) Upload the source files in the desired format and size. Optional files can be skipped. Once the uploads are complete, click Next, then enter a name for your asset and an optional description. Click Done when it is ready.
 
-    <img width="222" height="200" alt="import_sky_3" src="https://github.com/user-attachments/assets/442d5e1a-0317-40d0-ab89-bee1993572a4" /> <img width="222" height="200" alt="import_sky_4" src="https://github.com/user-attachments/assets/7ec0e552-fb47-4381-94ed-e81a9cd713d2" /> <img width="280" height="200" alt="import_sky_5" src="https://github.com/user-attachments/assets/77e7e33c-c85c-445a-bff9-2544bf5896db" />
+    <img width="222" height="200" alt="import_sky_3" src="https://github.com/user-attachments/assets/442d5e1a-0317-40d0-ab89-be1993572a4" /> <img width="222" height="200" alt="import_sky_4" src="https://github.com/user-attachments/assets/7ec0e552-fb47-4381-94ed-e81a9cd713d2" /> <img width="280" height="200" alt="import_sky_5" src="https://github.com/user-attachments/assets/77e7e33c-c85c-445a-bff9-2544bf5896db" />
 
 
 3) After a short wait, the Skydome asset will appear in the selected folder. Dragging and dropping it into the world will make it function as an Environment Gizmo.
@@ -116,7 +101,7 @@ Allows changing the sky texture, scene brightness, fog, and VOIP settings.
 
 ---
 
-#### 1.2.3 How to Create Skybox with Gen AI
+#### 1.1.3 How to Create Skybox with Gen AI
 1) From the top panel, select the **Gen AI** tab.
 
     <img width="400" height="28" alt="import_ai_1" src="https://github.com/user-attachments/assets/b88a2232-f905-49b4-8612-6ae3358debe6" />
@@ -135,9 +120,27 @@ Allows changing the sky texture, scene brightness, fog, and VOIP settings.
 
 ---
 
-#### 1.2.4 Dynamic Light Gizmo
-A light source that changes in real time to create more natural and immersive environments. 
-**Variables** Can be accessed from the Light section in the Properties popup on the right side of the screen while the object is selected.
+#### 1.1.4 How to Access Light Gizmos
+1) Open the **Build** popup from the buttons at the top left and click on **Gizmos**.
+
+    <img width="379" height="200" alt="101" src="https://github.com/user-attachments/assets/0d5d9bd2-af30-476e-8918-54a294a85819" />
+
+2) In the opened Gizmos panel, type **Light** to access all light-related Gizmos.
+
+    <img width="242" height="200" alt="102" src="https://github.com/user-attachments/assets/6c51ee43-65dc-4e02-8741-9a7b56ebb85c" />
+
+3) **Drag** any Gizmo component and **drop** it at any position in the world.
+
+    <img width="157" height="150" alt="103" src="https://github.com/user-attachments/assets/e4707a2f-3fea-41a9-9bc8-72544e198d70" />
+
+---
+
+#### 1.1.5 Dynamic Light Gizmo
+A light source that changes in real time to create more natural and immersive environments.  
+
+**Capacity note:** You can currently have up to 20 Dynamic Light Gizmos in a single world at one time, so plan your lighting budget carefully.
+
+**Variables** can be accessed from the Light section in the Properties popup on the right side of the screen while the object is selected.
 
 - **Enabled**: Controls whether the light is on or off.
 
@@ -165,8 +168,11 @@ A light source that changes in real time to create more natural and immersive en
 
 ---
 
-#### 1.2.5 Static Light Gizmo
-A fixed light source that does not change, used for consistent and performance-friendly lighting. 
+#### 1.1.6 Static Light Gizmo
+A fixed light source that does not change, used for consistent and performance-friendly lighting.  
+
+**Note:** Static Light Gizmos are configured in the editor and **cannot be changed at runtime** via scripts.
+
 **Variables** can be accessed from the Light section in the Properties popup on the right side of the screen while the object is selected.
 
 - **Enabled**: Controls whether the light is on or off.
@@ -195,15 +201,15 @@ A fixed light source that does not change, used for consistent and performance-f
 ---
 
 ### 1.3 DynamicLightController Script Example
-Lets write a script that controls **Dynamic Light Gizmo** when game starts.
+Let's write a script that controls a **Dynamic Light Gizmo** when the game starts.
 
-1) First, we create a script and call it ***DynamicLightController***
+1) First, we create a script and call it ***DynamicLightController***.
 
     <img width="400" height="108" alt="Frame 35 (1)" src="https://github.com/user-attachments/assets/2f082889-ccc6-4dbf-abe8-2e03634feace" />
 
-2) And lets write our script;
+2) And let's write our script:
 
-```javascript
+```typescript
 // Importing the necessary modules
 import { Component, PropTypes, Color, DynamicLightGizmo } from 'horizon/core';
 
@@ -232,12 +238,10 @@ export class DynamicLightController extends Component<typeof DynamicLightControl
       return;
     }
 
+    // Cast the entity to a DynamicLightGizmo.
+    // Note: as() does not perform runtime type checking, so make sure
+    // that lightToControl is actually a Dynamic Light Gizmo in the editor.
     const lightGizmo = this.props.lightToControl.as(DynamicLightGizmo);
-    // Check if defined object is DynamicLightGizmo
-    if (!lightGizmo) {
-      console.error("DynamicLightController: The 'lightToControl' entity must be a DynamicLight gizmo.");
-      return;
-    }
 
     // Apply common light properties
     lightGizmo.color.set(this.props.color);
@@ -251,11 +255,15 @@ export class DynamicLightController extends Component<typeof DynamicLightControl
 Component.register(DynamicLightController);
 ```
 
-3) Put the script to an empty object via **Attach Script** and assign a **Dynamic Light Gizmo**
+> **Important:** `Entity.as(SomeType)` is a cast and does **not** perform runtime type checking.  
+> It will still return an object even if the underlying entity is not actually that gizmo type.  
+> Always assign the correct gizmo type (in this case, a **Dynamic Light Gizmo**) in the editor.
+
+3) Put the script on an empty object via **Attach Script** and assign a **Dynamic Light Gizmo**.
 
     <img width="192" height="200" alt="Frame 38 (1)" src="https://github.com/user-attachments/assets/08b925ce-f338-4fd9-a2e8-d5316f8da40a" /> <img width="290" height="200" alt="image" src="https://github.com/user-attachments/assets/0ddec158-776b-4ee4-83e7-6d4f98c93bb8" />
 
-4) Enter preview mode and try, values will change only at start.
+4) Enter preview mode and try; values will change only at start.
 
     <img width="189" height="200" alt="Frame 36 (1)" src="https://github.com/user-attachments/assets/5c7672a1-eb1c-438a-a220-7f463dfdff80" /> <img width="217" height="200" alt="Frame 37 (1)" src="https://github.com/user-attachments/assets/9acda05f-35f0-473c-975e-e18e3054ce24" />
 
@@ -267,48 +275,48 @@ Practical ways to improve **visuals**, set the **mood**, and keep **performance*
 ---
 
 #### 1.4.1 Define a Main Light Source
-  - Every scene should have one dominant light *(e.g., sun, spotlight, torch)*.
+  - Every scene should have one dominant light *(e.g., sun, spotlight, torch)*.  
   - Too many competing lights make the scene look flat and artificial.
 
 ---
 
 #### 1.4.2 Use Contrast for Atmosphere
-  - Balance bright and dark areas to create depth.
-  - Flat, uniform lighting = boring scene
+  - Balance bright and dark areas to create depth.  
+  - Flat, uniform lighting = boring scene  
   - Contrast lighting = dramatic and engaging
 
 ---
           
 #### 1.4.3 Control Color Temperature
-  - Warm tones *(orange/red)*: Safe, cozy, romantic
-  - Cool tones *(blue/green)*: Mysterious, threatening, futuristic
+  - Warm tones *(orange/red)*: Safe, cozy, romantic  
+  - Cool tones *(blue/green)*: Mysterious, threatening, futuristic  
   - Color contrast can guide the player’s attention.
 
 ---
 
 #### 1.4.4 Guide the Player With Light
-  - Highlight important areas *(exits, objectives, items)* with subtle light cues.
+  - Highlight important areas *(exits, objectives, items)* with subtle light cues.  
   - Example: A softly lit door naturally pulls the player’s focus.
 
 ---
 
 #### 1.4.5 Add Motion With Dynamic Lights
-  - Flashing neons, moving spotlights, flickering torches bring energy to the scene.
+  - Flashing neons, moving spotlights, flickering torches bring energy to the scene.  
   - But: too many dynamic lights = performance drop. Use with balance.
 
 ---
 
 #### 1.4.6 Leverage Player Psychology
-  - Brightness → safety & speed
-  - Darkness → tension & focus
-  - Colorful lights → fun & excitement
+  - Brightness → safety & speed  
+  - Darkness → tension & focus  
+  - Colorful lights → fun & excitement  
   - Light intensity and tone directly shape how players feel in your world.
 
 ---
 
 #### 1.4.7 Optimize for Performance
-  - Extra lights are costly in VR/mobile.
-  - Remove unnecessary sources and use static lighting where possible.
+  - Extra lights are costly in VR/mobile.  
+  - Remove unnecessary sources and use static lighting where possible.  
   - Keep dynamic lighting only for moments that matter.
 
 ---
@@ -323,15 +331,15 @@ Click **Build** from the top panel, then select **Colliders**. From the opened p
 
   <img width="395" height="200" alt="collider_htc_1" src="https://github.com/user-attachments/assets/6e27752a-49fb-4529-be6d-a2b14edc535f" /> <img width="251" height="200" alt="collider_htc_2" src="https://github.com/user-attachments/assets/4f60e93f-da8e-40b7-8490-0cae7b36e84a" /> <img width="200" height="200" alt="collider_htc_3" src="https://github.com/user-attachments/assets/8ff6b378-a3d2-414d-8ee8-75d47b730e7a" />
 
-Click **Build** from the top panel, then select **Gizmos**. From the opened popup, Select **Trigger Zone** and drag and drop into the world.
+Click **Build** from the top panel, then select **Gizmos**. From the opened popup, select **Trigger Zone** and drag and drop into the world.
 
   <img width="395" height="200" alt="trigger_htc_1" src="https://github.com/user-attachments/assets/47b58bb3-24bb-40d8-bdcd-b0ea4e34addf" /> <img width="251" height="200" alt="trigger_htc_2" src="https://github.com/user-attachments/assets/734d5726-5630-4233-87ec-bb1460da48f2" /> <img width="200" height="203" alt="trigger_htc_3" src="https://github.com/user-attachments/assets/2f46e64f-2954-423c-8d98-acf9dc13ce77" />
 
 ---
 
 ### 2.2 Colliders and Triggers Behavior Variables
-Colliders create physical boundaries that prevent objects or players from passing
-Also not only Collider objects can block players or other objects. Any object with **Collidable** enabled can act as a physical barrier, but cannot be used as a trigger.
+Colliders create physical boundaries that prevent objects or players from passing.  
+Also, not only Collider objects can block players or other objects. Any object with **Collidable** enabled can act as a physical barrier, but cannot be used as a trigger.
 
   <img width="135" height="150" alt="collid_1" src="https://github.com/user-attachments/assets/ccced35c-118c-492d-8464-60eef080eb69" /> <img width="135" height="150" alt="collid_2" src="https://github.com/user-attachments/assets/188871fa-c8a1-42e1-90fe-de1f5c6cf7f4" /> <img width="140"     height="150" alt="collid_3" src="https://github.com/user-attachments/assets/4cde70e7-b88d-421d-a09b-9dff302f7bc0" /> <img width="121" height="150" alt="collid_4" src="https://github.com/user-attachments/assets/e9966d5f-011a-4997-a884-8e88fccb312d" />
 
@@ -340,45 +348,45 @@ Also not only Collider objects can block players or other objects. Any object wi
   <img width="312" height="150" alt="Frame 39" src="https://github.com/user-attachments/assets/65e1ccfc-0ac9-4fa8-a6c9-c4ad0fd5da30" /> <img width="150" height="150" alt="Frame 41" src="https://github.com/user-attachments/assets/8edfa2e2-853e-488c-9b8e-1d2b36393d45" /> <img width="150" height="150" alt="Frame 42" src="https://github.com/user-attachments/assets/e18e8fa4-feef-4c58-8603-41812445e161" />
 
 **Collision Layer** assigns objects to specific groups that determine which objects can collide with or ignore each other, helping control interactions and optimize performance. **Collidable** must be enabled for this feature.
-  - **Everything:** It interacts physically with both objects and players.
-  - **Objects Only:** It only interacts physically with objects and does not affect players.
+  - **Everything:** It interacts physically with both objects and players.  
+  - **Objects Only:** It only interacts physically with objects and does not affect players.  
   - **Players Only:** It only interacts physically with players and does not affect objects.
 
 To adjust the size of colliders, you can use the values in the **Attributes** section that are specific to colliders.
 
   <img width="200" height="250" alt="col_sca_1" src="https://github.com/user-attachments/assets/18481c1d-6803-445a-a513-a426c522dff6" /> <img width="200" height="250" alt="col_sca_2" src="https://github.com/user-attachments/assets/638f0f8c-a3c4-4318-a21d-45d4906bef84" /> <img width="200" height="250" alt="col_sca_3" src="https://github.com/user-attachments/assets/db76a57e-a528-46d1-a51b-4f2199a0053a" /> <img width="200" height="250" alt="col_sca_4" src="https://github.com/user-attachments/assets/d271d032-8fdd-4109-b951-21b35f36a455" />
 
-**Trigger Zones** do not block movement but detect when an object or player enters to activate events or actions.
+**Trigger Zones** do not block movement but detect when an object or player enters to activate events or actions.  
 To change the size of a **Trigger Zone**, adjust its **Scale** in the **Attributes** section.
 
   <img width="180" height="202" alt="Frame 43" src="https://github.com/user-attachments/assets/119f3fa8-6866-4ad7-9a04-4dee75711b6e" /> <img width="180" height="200" alt="Frame 44" src="https://github.com/user-attachments/assets/613a78e2-07db-41ce-9172-07a891817077" />
 
-Behavior properties of **Trigger Zone**
-  - **Enabled:** Checks whether the Trigger is active; if it is not active, the connected scripts will not run.
+Behavior properties of **Trigger Zone**  
+  - **Enabled:** Checks whether the Trigger is active; if it is not active, the connected scripts will not run.  
   - **Trigger On:** Defines the conditions under which the Trigger will activate.
-    - **Players:** It only activates when Players touch the trigger.
+    - **Players:** It only activates when Players touch the trigger.  
     - **Objects Tagged:** It only activates when objects with the same tag as the Object Tag variable touch the trigger.
 
-  - **Object Tag:** When Objects Tagged is selected, it specifies which tagged objects can activate the trigger.
+  - **Object Tag:** When **Objects Tagged** is selected, it specifies which tagged objects can activate the trigger.  
   - **Selectable in Screen Mode:** Determines whether the Trigger can be interacted with in the screen; when enabled, players can activate it by touching it.
 
     <img width="202" height="201" alt="select 1" src="https://github.com/user-attachments/assets/0f0ae978-c72d-42f5-8f5d-fc2a960a7412" /> <img width="203" height="200" alt="select 2" src="https://github.com/user-attachments/assets/e5853b6a-4384-46a0-b9f2-5f2a144014dd" />
 
-  - *(Selectable in Screen Mode)* **Interaction Prompt Icon:** Specifies the icon that will appear in the UI.
+  - *(Selectable in Screen Mode)* **Interaction Prompt Icon:** Specifies the icon that will appear in the UI.  
   - *(Selectable in Screen Mode)* **Interaction Distance:** Sets the minimum distance required for the player to interact with the trigger.
 
 ---
 
 ### 2.3 TriggerLightController Script Example
-Lets write a script that enable Dynamic Light Gizmo when we enter trigger and disables when we exit from the trigger.
+Let's write a script that enables a Dynamic Light Gizmo when we enter the trigger and disables it when we exit the trigger.
 
-1) First, we create a script and call it ***TriggerLightController***
+1) First, we create a script and call it ***TriggerLightController***.
 
     <img width="400" height="108" alt="Frame 35 (1)" src="https://github.com/user-attachments/assets/2f082889-ccc6-4dbf-abe8-2e03634feace" />
 
-2) And lets write our script;
+2) And let's write our script:
 
-```javascript
+```typescript
 // Importing the necessary modules
 import { Component, PropTypes, Player, CodeBlockEvents, DynamicLightGizmo } from 'horizon/core';
 
@@ -414,24 +422,25 @@ export class TriggerLightController extends Component<typeof TriggerLightControl
       return;
     }
 
-    // Cast the entity to a DynamicLightGizmo
+    // Cast the entity to a DynamicLightGizmo.
+    // Note: as() does not perform runtime type checking,
+    // so make sure lightEntity is a Dynamic Light Gizmo in the editor.
     const lightGizmo = this.props.lightEntity.as(DynamicLightGizmo);
-    if (lightGizmo) {
-      lightGizmo.enabled.set(enable);
-    } else {
-      console.error("TriggerLightController: The 'lightEntity' must be a DynamicLight gizmo.");
-    }
+    lightGizmo.enabled.set(enable);
   }
 }
 
 Component.register(TriggerLightController);
 ```
 
-3) Put the script to a Trigger Zone Gizmo via Attach Script and assign a Dynamic Light Gizmo
+> **Note:** As with the previous example, `as(DynamicLightGizmo)` is a cast, not a type check.  
+> Ensure that **lightEntity** is a Dynamic Light Gizmo in the editor.
+
+3) Put the script on a Trigger Zone Gizmo via Attach Script and assign a Dynamic Light Gizmo.
 
     <img width="205" height="200" alt="Frame 45" src="https://github.com/user-attachments/assets/7a5eab79-98f9-4dfd-b909-c09ac2c3e179" /> <img width="262" height="200" alt="Frame 46" src="https://github.com/user-attachments/assets/ef3c6b2c-6452-4308-bbc9-b2feaa411977" />
 
-4) Enter preview mode and try, light will turn on when we enter the trigger zone, and turn off when we exit.
+4) Enter preview mode and try; the light will turn on when we enter the trigger zone, and turn off when we exit.
 
     <img width="311" height="200" alt="Frame 47" src="https://github.com/user-attachments/assets/f82e007a-b48e-444b-90b1-b56f2b2c4a83" /> <img width="196" height="200" alt="Frame 48" src="https://github.com/user-attachments/assets/88b8ed19-f0c1-4c78-b787-ceae2854a608" /> <img width="175" height="200" alt="Frame 49" src="https://github.com/user-attachments/assets/34cc9647-cdeb-47a5-8f4f-634a644502e7" />
 
@@ -443,46 +452,46 @@ Essential advice for using colliders and triggers effectively to create smooth, 
 ---
 
 #### 2.4.1 Use Trigger Zone Gizmo With Purpose
-  - In Horizon Worlds, the Trigger Zone is the main way to detect player presence.
+  - In Horizon Worlds, the Trigger Zone is the main way to detect player presence.  
   - When a player enters → turn on a light, open a door, play music, advance a quest.
 
 ---
 
 #### 2.4.2 Collider = Object Geometry
-  - Most objects are automatically “collidable.”
+  - Most objects are automatically “collidable.”  
   - If an object is only decorative, disable collisions to save performance.
 
 ---
           
 #### 2.4.3 Prefer Small Zones Over Huge Ones
-  - Avoid giant Trigger Zones covering an entire area.
+  - Avoid giant Trigger Zones covering an entire area.  
   - Use smaller, focused zones for more precise control and better performance.
 
 ---
 
 #### 2.4.4 Simulate Layer Control
-  - Horizon Worlds doesn’t have Unity-style physics layers.
+  - Horizon Worlds doesn’t have Unity-style physics layers.  
   - Instead:
-    - Design zones so only players trigger them.
+    - Design zones so only players trigger them.  
     - Place zones carefully to prevent unwanted objects from activating them.
 
 ---
 
 #### 2.4.5 Control Visibility & Audio
-  - With Trigger Zones you can enable/disable objects or start/stop audio and lighting effects.
+  - With Trigger Zones you can enable/disable objects or start/stop audio and lighting effects.  
   - Example: entering a secret area changes the ambient light or triggers a sound cue.
 
 ---
 
 #### 2.4.6 Test and Debug Often
-  - Always test to ensure your Trigger Zones activate correctly.
+  - Always test to ensure your Trigger Zones activate correctly.  
   - During development, make zones larger for easier debugging, then refine them later.
 
 ---
 
 #### 2.4.7 Guide Player Experience
   - Use triggers not just technically, but also for player direction and feedback:
-    - **Entering an area** → spotlight turns on, showing the right path.
+    - **Entering an area** → spotlight turns on, showing the right path.  
     - **Crossing into a new section** → a sound plays, reinforcing progress.
 
 ---
@@ -504,16 +513,16 @@ Adding, recording, and managing sounds to enhance immersion in your world.
 ---
 
 ### 3.2 Sound Component Variables
-- **Preview:** Test the sound in the editor without running the world.
-- **Play on Start:** Sound starts automatically when the world or object loads.
-- **Play and Forget:** Plays the sound and lets it finish on its own, without needing to stop it.
-- **Volume:** Controls loudness (0.0 = silent, 1.0 = full volume).
-- **Volume Randomness:** Adds variation to the volume each time the sound plays, for more natural repetition.
-- **Pitch:** Adjusts frequency: positive = higher pitch, negative = lower pitch.
-- **Pitch Randomness:** Randomly changes pitch slightly each time, avoiding robotic repetition.
-- **Global:** If checked, the sound is heard by everyone equally, ignoring distance.
-- **Minimum Distance:** The range within which the sound is always at full volume.
-- **Maximum Distance:** Beyond this range, the sound is no longer heard. (Between min and max, volume fades out gradually.)
+- **Preview:** Test the sound in the editor without running the world.  
+- **Play on Start:** Sound starts automatically when the world or object loads.  
+- **Play and Forget:** Plays the sound and lets it finish on its own, without needing to stop it.  
+- **Volume:** Controls loudness (0.0 = silent, 1.0 = full volume).  
+- **Volume Randomness:** Adds variation to the volume each time the sound plays, for more natural repetition.  
+- **Pitch:** Adjusts frequency: positive = higher pitch, negative = lower pitch.  
+- **Pitch Randomness:** Randomly changes pitch slightly each time, avoiding robotic repetition.  
+- **Global:** If checked, the sound is heard by everyone equally, ignoring distance.  
+- **Minimum Distance:** The range within which the sound is always at full volume.  
+- **Maximum Distance:** Beyond this range, the sound is no longer heard. (Between min and max, volume fades out gradually.)  
 - **Send Audio Complete:** Triggers an event once the sound finishes, useful for sequencing sounds or effects.
 
 ---
@@ -521,19 +530,19 @@ Adding, recording, and managing sounds to enhance immersion in your world.
 ### 3.3 How to Use Sound Recorder
 With Sound Recorder, you can use your microphone to record sound effects, ambient sounds, or even music and use them as audio in your game.
 
-1) Click **Record** for start recording your sound. You need a functioning microphone.
+1) Click **Record** to start recording your sound. You need a functioning microphone.
 
     <img width="350" height="100" alt="recorder1" src="https://github.com/user-attachments/assets/d9564a0e-05d7-4ab8-864b-bb577667d87c" />
 
-2) Click **Stop** for finish your sound.
+2) Click **Stop** to finish your sound.
 
     <img width="350" height="100" alt="recorder2" src="https://github.com/user-attachments/assets/cf9056c4-00fe-4ee2-a6c6-7882fb3eb7c8" />
 
-3) Click **Play** for play the sound you created.
+3) Click **Play** to play the sound you created.
 
     <img width="350" height="100" alt="recorder3" src="https://github.com/user-attachments/assets/92e01536-11af-4bab-8286-c092fd2d342b" />
 
-4) If you would like to make the sound effect always replay, you can turn on the **Loop**.
+4) If you would like to make the sound effect always replay, you can turn on **Loop**.
 
     <img width="350" height="100" alt="record4" src="https://github.com/user-attachments/assets/697b7192-c0de-4315-a378-033559606b43" />
 
@@ -542,13 +551,13 @@ With Sound Recorder, you can use your microphone to record sound effects, ambien
 ### 3.4 TriggerSoundController Script Example
 Let's create a script that plays a sound effect when we click on a trigger.
 
-1) First, we create a script and call it ***TriggerSoundController***
+1) First, we create a script and call it ***TriggerSoundController***.
 
     <img width="400" height="108" alt="Frame 35 (1)" src="https://github.com/user-attachments/assets/2f082889-ccc6-4dbf-abe8-2e03634feace" />
 
-2) And lets write our script;
+2) And let's write our script:
 
-```javascript
+```typescript
 // Importing the necessary modules
 import { Component, PropTypes, Player, CodeBlockEvents, AudioGizmo } from 'horizon/core';
 
@@ -577,26 +586,27 @@ export class TriggerSoundController extends Component<typeof TriggerSoundControl
       return;
     }
 
-    // Cast the entity to an AudioGizmo and play the sound
+    // Cast the entity to an AudioGizmo and play the sound.
+    // Note: as() does not perform runtime type checking,
+    // so make sure soundToPlay is an AudioGizmo in the editor.
     const soundGizmo = this.props.soundToPlay.as(AudioGizmo);
-    if (soundGizmo) {
-      soundGizmo.play();
-    } else {
-      console.error("TriggerSoundController: The 'soundToPlay' entity must be an AudioGizmo.");
-    }
+    soundGizmo.play();
   }
 }
 
 Component.register(TriggerSoundController);
 ```
 
-3) Put the script to a Trigger Zone Gizmo via Attach Script and assign a Sound object. Be sure that Trigger is enabled the Selectable in Screen Mode.
+> **Note:** As with Dynamic Light, `as(AudioGizmo)` will not fail automatically for a wrong type.  
+> Ensure **soundToPlay** references an Audio Gizmo in the editor.
+
+3) Put the script to a Trigger Zone Gizmo via Attach Script and assign a Sound object. Be sure that Trigger has **Selectable in Screen Mode** enabled.
 
     <img width="220" height="200" alt="image" src="https://github.com/user-attachments/assets/c038e4a3-dce6-48a2-ba89-389d614b458e" />
 
-4) Enter preview mode and try, assigned sound effect will play every time you press the trigger.
+4) Enter preview mode and try; the assigned sound effect will play every time you press the trigger.
 
-    <img width="285" height="200" alt="Frame 50" src="https://github.com/user-attachments/assets/551548e8-69bf-4502-bd87-a95ed774b222" /> <img width="144" height="200" alt="Frame 51" src="https://github.com/user-attachments/assets/9db32dc6-5fa9-4212-833e-ab5168138d55" />
+    <img width="285" height="200" alt="Frame 50" src="https://github.com/user-attachments/assets/551548e-69bf-4502-bd87-a95ed774b222" /> <img width="144" height="200" alt="Frame 51" src="https://github.com/user-attachments/assets/9db32dc6-5fa9-4212-833e-ab5168138d55" />
 
 ---
 
@@ -606,50 +616,50 @@ Learn simple techniques to enhance gameplay, create atmosphere, and avoid common
 ---
 
 #### 3.5.1 Use Audio Gizmos Efficiently
-  - Horizon Worlds provides Sound Gizmos to play effects, music, or ambient loops.
+  - Horizon Worlds provides Sound Gizmos to play effects, music, or ambient loops.  
   - Attach them to objects or areas for localized sound.
 
 ---
 
 #### 3.5.2 Keep Performance in Mind
-  - Too many looping sounds or overlapping music tracks hurt performance.
+  - Too many looping sounds or overlapping music tracks hurt performance.  
   - Use short, optimized clips and avoid stacking too many audio sources.
 
 ---
 
 #### 3.5.3 Leverage Triggers for Dynamic Audio
   - Combine Trigger Zones with sounds:
-    - Entering a room → background music starts.
-    - Interacting with an object → play a sound effect.
+    - Entering a room → background music starts.  
+    - Interacting with an object → play a sound effect.  
     - Reaching a checkpoint → play a fanfare.
 
 ---
 
 #### 3.5.4 Balance Volume and Layers
-  - Avoid every sound being loud and competing.
+  - Avoid every sound being loud and competing.  
   - Think in layers:
-    - Music = emotional base
-    - Ambient sounds = atmosphere (wind, city, cave echoes)
+    - Music = emotional base  
+    - Ambient sounds = atmosphere (wind, city, cave echoes)  
     - SFX = interaction feedback (jumps, hits, UI sounds)
 
 ---
 
 #### 3.5.5 Spatial Audio for Immersion
-  - Use 3D/spatialized audio so sounds feel like they come from their source.
+  - Use 3D/spatialized audio so sounds feel like they come from their source.  
   - Example: A waterfall gets louder as you get closer, footsteps pan depending on direction.
 
 ---
 
 #### 3.5.6 Match Sound to Environment
   - Choose sounds that reinforce the setting:
-    - Nightclub → bass-heavy music + crowd noise
-    - Cave → dripping water + echoing footsteps
+    - Nightclub → bass-heavy music + crowd noise  
+    - Cave → dripping water + echoing footsteps  
     - Outdoor city → wind + distant traffic + birds
 
 ---
 
 #### 3.5.7 Provide Player Comfort
-  - Not every player likes constant background sound.
+  - Not every player likes constant background sound.  
   - Offer a way to toggle music or reduce ambience if possible.
 
 ---
@@ -682,34 +692,34 @@ Here are the features of the World Desktop Editor that you can use in level desi
 
 ---
 
-#### 4.2.1 Lets start with fundamentals
-   - Press Q for be able to Select objects.
+#### 4.2.1 Let's start with fundamentals
+   - Press Q to select objects.
 
      <img width="162" height="75" alt="fundamental_Q" src="https://github.com/user-attachments/assets/2b96ae4c-b619-4f7a-99fd-d861719ad0a2" />
 
-   - Press W for be able to Move selected objects.
+   - Press W to move selected objects.
 
      <img width="131" height="75" alt="fundamental_W" src="https://github.com/user-attachments/assets/ede4a31c-2726-42a7-9642-f15d229a0e69" />
 
-   - Press E for be able to Rotate selected objects.
+   - Press E to rotate selected objects.
 
      <img width="128" height="75" alt="fundamental_E" src="https://github.com/user-attachments/assets/8270e082-7ceb-4c54-990c-64e7d5ee136c" />
 
-   - Press R for be able to Scale selected objects.
+   - Press R to scale selected objects.
 
      <img width="147" height="75" alt="fundamental_R" src="https://github.com/user-attachments/assets/af5afe04-424c-4a21-b843-0ccde94e23b1" />
 
 ---
 
 #### 4.2.2 Transform and Pivot overview
-**Transform**;
-  - **Local:** Shows an object’s position, rotation, and scale relative to its parent or own orientation.
+**Transform**;  
+  - **Local:** Shows an object’s position, rotation, and scale relative to its parent or own orientation.  
   - **Global:** Shows an object’s position, rotation, and scale relative to the world coordinate system.
 
     <img width="148" height="75" alt="transform" src="https://github.com/user-attachments/assets/72967bc2-00e5-4260-8197-869af51ecfbb" />
 
-**Pivot**;
-  - **Center:** The visual midpoint of an object or selection, used for moving or scaling multiple objects together.
+**Pivot**;  
+  - **Center:** The visual midpoint of an object or selection, used for moving or scaling multiple objects together.  
   - **Pivot:** The actual point around which the object rotates or scales, which may differ from the center.
 
     <img width="152" height="75" alt="pivot" src="https://github.com/user-attachments/assets/7e163d4b-bce1-4ea7-9ada-51d096f3524c" />
@@ -794,12 +804,12 @@ Here are the features of the World Desktop Editor that you can use in level desi
 
 ---
 
-### 4.3 Hallowen Graveyard - Level Creation Process
-Let's make a gravyeard scene with hallowen concept!
+### 4.3 Halloween Graveyard - Level Creation Process
+Let's make a graveyard scene with a Halloween concept!
 
 1) First, imagine the concept you want to create, check similar designs and let your creativity speak!
 
-2) Then block it out in your world with a simple graybox layout design so you can better understand how it will look and feel.For example, in my layout: gray represents walls, brown represents trees, yellow represents light poles, and pink represents graves.
+2) Then block it out in your world with a simple graybox layout design so you can better understand how it will look and feel. For example, in my layout: gray represents walls, brown represents trees, yellow represents light poles, and pink represents graves.
 
     <img width="626" height="300" alt="leveldesign_graybow" src="https://github.com/user-attachments/assets/bce744df-5f78-4feb-86d3-dd20861a6bdb" />
 
@@ -807,9 +817,9 @@ Let's make a gravyeard scene with hallowen concept!
 
     <img width="625" height="300" alt="leveldesign_mainlines" src="https://github.com/user-attachments/assets/79e4c078-ff67-4938-b7eb-5c95da2cd7a1" />
 
-4) The scene has started to take shape, but it still feels empty. Now it’s time to add props to fill the space and make the concept clearer. This step is all about your imagination, —you can even add a story element to the scene, like I did by placing a witch watching us from a distance.
+4) The scene has started to take shape, but it still feels empty. Now it’s time to add props to fill the space and make the concept clearer. This step is all about your imagination — you can even add a story element to the scene, like I did by placing a witch watching us from a distance.
 
-    <img width="625" height="300" alt="leveldesign_addingprops" src="https://github.com/user-attachments/assets/50d8ef2a-2496-444d-9974-ad9db17482cf" />
+    <img width="625" height="300" alt="leveldesign_addingprops" src="https://github.com/user-attachments/assets/50d8ef2a-2496-444b-9974-ad9db17482cf" />
 
 5) To bring a scene to life, you need to give it light! Depending on your concept, a skybox and proper lighting can create unforgettable visuals. For my design, I used a misty, mystical atmosphere with a yellow-orange lighting palette. On top of that, I added special lighting to certain objects to draw attention to them and reinforce the Halloween mood I wanted to create.
 
@@ -819,13 +829,13 @@ Let's make a gravyeard scene with hallowen concept!
 
     <img width="625" height="300" alt="leveldesign_triggers" src="https://github.com/user-attachments/assets/961ff6c4-bbc7-4d40-b6b7-c41cea4e6d4a" />
 
-7) It’s sounds time! I’m enhancing my scene with ambient music and various sound effects that match the concept. The triggers we placed in the previous step can now be used to call sound effects through scripting, making the experience more immersive and dynamic.
+7) It’s time for sound! I’m enhancing my scene with ambient music and various sound effects that match the concept. The triggers we placed in the previous step can now be used to call sound effects through scripting, making the experience more immersive and dynamic.
 
     <img width="625" height="300" alt="leveldesign_sounds" src="https://github.com/user-attachments/assets/c1823939-4826-4fcd-9a9b-19ab9fdb228f" />
 
 8) And finally, it’s time to test the scene. Review everything we’ve done so far, adjust any parts you want to improve, and fix any problems that appear. You should be the first to enjoy and approve your scene, only then is it ready to publish!
 
-    <img width="625" height="300" alt="leveldesign_playtesting" src="https://github.com/user-attachments/assets/1d46f7a7-ae1f-465c-8c25-0556ebf20c10" />
+    <img width="625" height="300" alt="leveldesign_playtesting" src="https://github.com/user-attachments/assets/1d46f7a1-ae1f-465c-8c25-0556ebf20c10" />
 
 ---
 
@@ -835,51 +845,51 @@ Discover practical advice, clever techniques, and pitfalls to avoid when designi
 ---
 
 #### 4.4.1 How to Create Better Levels
-  - Guide the Player
+  - **Guide the Player**
       - Use lighting, sound, and visual cues to naturally direct players where to go.
-  - Balance Challenge and Fun
+  - **Balance Challenge and Fun**
       - Keep difficulty fair but rewarding, ensuring players stay motivated.
-  - Maintain Flow
+  - **Maintain Flow**
       - Arrange areas and interactions so players move smoothly without confusion or frustration.
-  - Use Atmosphere Effectively
+  - **Use Atmosphere Effectively**
       - Combine lighting, sound, and visuals to build emotion and immersion.
-  - Encourage Interaction
+  - **Encourage Interaction**
       - Add mechanics and elements that invite players to experiment and engage.
-  - Playtest Often
+  - **Playtest Often**
       - Observe real players to find problems, improve pacing, and polish the design.
 
 ---
 
 #### 4.4.2 Best Practices for Optimization
-  - Use Simple Geometry
+  - **Use Simple Geometry**
       - Prefer basic or lowpoly shapes over highly complex models to reduce performance load.
-  - Limit Dynamic Lights
+  - **Limit Dynamic Lights**
       - Too many dynamic lights can cause lag; use static lighting where possible.
-  - Efficient Colliders
+  - **Efficient Colliders**
       - Use simple colliders (box, sphere, capsule).
-  - Optimize Assets
+  - **Optimize Assets**
       - Keep textures, sounds, and scripts lightweight to improve loading times.
-  - Control Object Count
+  - **Control Object Count**
       - Avoid overcrowding with unnecessary objects; focus on essential elements.
-  - Test Performance
+  - **Test Performance**
       - Regularly test to ensure stable frame rates and smooth interaction.
 
 ---
 
 #### 4.4.3 Common Mistakes to Avoid
-  - Overcrowding the Environment 
+  - **Overcrowding the Environment**  
       - Adding too many props, objects, or decorations can confuse players and reduce performance.
-  - Excessive Dynamic Lighting
+  - **Excessive Dynamic Lighting**  
       - Using too many dynamic lights can cause lag or frame drops. Use static lighting where possible.
-  - Poor Player Guidance
+  - **Poor Player Guidance**  
       - Players should always know where to go. Avoid confusing paths, hidden objectives, or unclear visual cues.
-  - Inefficient Colliders and Interactions
+  - **Inefficient Colliders and Interactions**  
       - Complex colliders or poorly aligned interactive elements can frustrate players.
-  - Neglecting Audio Feedback
+  - **Neglecting Audio Feedback**  
       - Lack of sound effects or background music can make gameplay feel flat and less engaging.
-  - Ignoring Device Performance
+  - **Ignoring Device Performance**  
       - Test on device to ensure smooth gameplay and avoid crashes or frame drops.
-  - Skipping Playtesting
+  - **Skipping Playtesting**  
       - Always test with real players to identify pacing, difficulty, or design issues.
 
 ---
