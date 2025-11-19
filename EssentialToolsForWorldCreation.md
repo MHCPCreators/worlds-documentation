@@ -92,7 +92,7 @@ Allows changing the sky texture, scene brightness, fog, and VOIP settings.
 
 2) Upload the source files in the desired format and size. Optional files can be skipped. Once the uploads are complete, click Next, then enter a name for your asset and an optional description. Click Done when it is ready.
 
-    <img width="222" height="200" alt="import_sky_3" src="https://github.com/user-attachments/assets/442d5e1a-0317-40d0-ab89-be1993572a4" /> <img width="222" height="200" alt="import_sky_4" src="https://github.com/user-attachments/assets/7ec0e552-fb47-4381-94ed-e81a9cd713d2" /> <img width="280" height="200" alt="import_sky_5" src="https://github.com/user-attachments/assets/77e7e33c-c85c-445a-bff9-2544bf5896db" />
+    <img width="222" height="200" alt="import_sky_3" src="https://github.com/user-attachments/assets/442d5e1a-0317-40d0-ab89-bee1993572a4" /> <img width="222" height="200" alt="import_sky_4" src="https://github.com/user-attachments/assets/7ec0e552-fb47-4381-94ed-e81a9cd713d2" /> <img width="280" height="200" alt="import_sky_5" src="https://github.com/user-attachments/assets/77e7e33c-c85c-445a-bff9-2544bf5896db" />
 
 
 3) After a short wait, the Skydome asset will appear in the selected folder. Dragging and dropping it into the world will make it function as an Environment Gizmo.
@@ -606,7 +606,7 @@ Component.register(TriggerSoundController);
 
 4) Enter preview mode and try; the assigned sound effect will play every time you press the trigger.
 
-    <img width="285" height="200" alt="Frame 50" src="https://github.com/user-attachments/assets/551548e-69bf-4502-bd87-a95ed774b222" /> <img width="144" height="200" alt="Frame 51" src="https://github.com/user-attachments/assets/9db32dc6-5fa9-4212-833e-ab5168138d55" />
+    <img width="285" height="200" alt="Frame 50" src="https://github.com/user-attachments/assets/551548e8-69bf-4502-bd87-a95ed774b222" /> <img width="144" height="200" alt="Frame 51" src="https://github.com/user-attachments/assets/9db32dc6-5fa9-4212-833e-ab5168138d55" />
 
 ---
 
@@ -819,7 +819,7 @@ Let's make a graveyard scene with a Halloween concept!
 
 4) The scene has started to take shape, but it still feels empty. Now it’s time to add props to fill the space and make the concept clearer. This step is all about your imagination — you can even add a story element to the scene, like I did by placing a witch watching us from a distance.
 
-    <img width="625" height="300" alt="leveldesign_addingprops" src="https://github.com/user-attachments/assets/50d8ef2a-2496-444b-9974-ad9db17482cf" />
+    <img width="625" height="300" alt="leveldesign_addingprops" src="https://github.com/user-attachments/assets/50d8ef2a-2496-444d-9974-ad9db17482cf" />
 
 5) To bring a scene to life, you need to give it light! Depending on your concept, a skybox and proper lighting can create unforgettable visuals. For my design, I used a misty, mystical atmosphere with a yellow-orange lighting palette. On top of that, I added special lighting to certain objects to draw attention to them and reinforce the Halloween mood I wanted to create.
 
@@ -835,7 +835,7 @@ Let's make a graveyard scene with a Halloween concept!
 
 8) And finally, it’s time to test the scene. Review everything we’ve done so far, adjust any parts you want to improve, and fix any problems that appear. You should be the first to enjoy and approve your scene, only then is it ready to publish!
 
-    <img width="625" height="300" alt="leveldesign_playtesting" src="https://github.com/user-attachments/assets/1d46f7a1-ae1f-465c-8c25-0556ebf20c10" />
+    <img width="625" height="300" alt="leveldesign_playtesting" src="https://github.com/user-attachments/assets/1d46f7a7-ae1f-465c-8c25-0556ebf20c10" />
 
 ---
 
