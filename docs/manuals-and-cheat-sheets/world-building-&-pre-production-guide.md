@@ -3,4 +3,5 @@
 
 <iframe width="890" height="501" src="https://www.youtube.com/embed/6HXezAfEBmM" title="World Building &amp; Pre-Production Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-➡️ [**World Planning Form**](https://github.com/MHCPCreators/worlds-documentation/blob/main/docs/manuals-and-cheat-sheets/MHCP_WorldPlanningGuide.pdf)
+
+➡️ [**World Planning Form**](https://raw.githubusercontent.com/MHCPCreators/worlds-documentation/refs/heads/main/docs/manuals-and-cheat-sheets/MHCP_WorldPlanningGuide.pdf)
