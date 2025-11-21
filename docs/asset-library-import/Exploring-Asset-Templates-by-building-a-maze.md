@@ -36,11 +36,11 @@ Asset Templates allow you to:
 
 - **Updating**:  
   - Both systems allow edits in the template to cascade to instances.  
-  - Horizon adds an **asset update flow**: instances notify you when updates are available, and you can accept them.  
+  - Horizon adds an **asset update flow**: instances notify you when updates are available and you can accept them.  
 
 - **Unlinking**:  
   - Unity supports unpacking a prefab.  
-  - Horizon supports **unlinking** an instance root, which breaks the connection so you can modify or delete internals, but lose future updates.  
+  - Horizon supports **unlinking** an instance root which breaks the connection, so you can modify or delete internals but lose future updates.  
 
 ---
 
@@ -50,7 +50,7 @@ Asset Templates allow you to:
 2. **Updating** – In the Asset Library *Right-click a Template Asset* → **Edit Template Definition**. Save to propagate changes to all instances.  
 3. **Instantiation** – Drag from the Assets panel into the world → One root entity is created.  
 4. **Overrides** – Modify properties on the root entity; these persist through updates.  
-5. **Unlinking** – Right-click an instance root → *Unlink instance root* → Entities become editable, but stop receiving updates.  
+5. **Unlinking** – Right-click an instance root → *Unlink instance root* → Entities become editable but stop receiving updates.  
 
 ---
 ## Summary
@@ -65,7 +65,7 @@ When to use Asset Templates:
 # Learning by Doing: 
 ## Build (Short tutorial)
 Create a basic board/grid suitable for chess, snakes & ladders, etc. 
-Cells are spawned from an Asset Template into a parent “BoardRoot” when a player enters the world. We’ll track all cells in an array and place items at a cell’s center.
+Cells are spawned from an Asset Template into a parent “Board Root Entity” when a player enters the world. We’ll track all cells in an array and place items at a cell’s center.
 
 We’ll write three scripts:
 
@@ -75,7 +75,7 @@ We’ll write three scripts:
 
 **Cell.ts** — Helper class. Provides grid coordinates to keep track of a cell on the board.
 
- At this point you’ll have cells spawning in the world 
+ At this point, you’ll have cells spawning in the world. 
 
  ## Build (Long Tutorial)
 Procedurally generate a maze from the board and access a cell to place items.
@@ -163,7 +163,7 @@ In this part, you set up the **Asset Template** in Horizon Worlds, using a shape
     
     - Each Cell is the same.
     
-    - The Cell is the **Root Object** (empty Entity named Cell and the Child Entity Named Floor.)
+    - The Cell is the **Root Object** (empty entity named Cell and the child entity named Floor.)
     
     - The **Cell** Template can be updated and all instances will be changed.
 
@@ -171,7 +171,7 @@ In this part, you set up the **Asset Template** in Horizon Worlds, using a shape
 ## Step 4: Let's Update the Cells
 
 ![Alt text](images/wd48.png)
-1. Select a **Cell** → then the Child **Floor**. Let's change the **TintColor** property of the **Floor** Entity on the **Cell**
+1. Select a **Cell** → then the Child **Floor**. Let's change the **TintColor** property of the **Floor** Entity on the **Cell**.
 - This changes only the selected **Cell**.
 
 ## What about the other Cells?
@@ -179,7 +179,7 @@ Change all cells.
 
 ![Alt text](images/wd49.png)
 
-2. Select the **Cell** **Root Object** again of the **Floor** you changed in the properties window you will see new information about the changes you made for **Review**. 
+2. Select the **Cell** **Root Object** again, for the **Floor** you changed in the properties window. You will see new information about the changes you made for **Review**. 
 
 3. Click **Review**.
 
@@ -274,16 +274,17 @@ This will be the parent object for the spawned assets Cells.
 1. Select **Script** → Add a new script → **BoardController**
 2. **Double-Click** the **BoardController** script.
 Now that you have your cells/tiles, let's write the code that creates the board.
+
 ## Step 3: Scripting a Board
 ### In your code editor: 
 It opens the new class attached to the BoardController.
-1. Add two helper scripts **Board.ts** and **Cell.ts**
 
 ![Alt text](images/wd59.png)
 
+1. Add two helper scripts **Board.ts** and **Cell.ts**
+
 Add:
 
-2. In the Cell class, add x and y variables and a constructor. This creates a coordinate for the cell, to place it on the grid.
 ```typescript
 export class Cell {
 
@@ -298,18 +299,10 @@ constructor(x: number , y: number)
 }
    ```
 
+2. In the Cell class, add x and y variables and a constructor. This creates a coordinate for the cell, to place it on the grid.
+
+
 Add:
-
-3. In the **Board class** 
-    - Create width and height variables. These are used to set the size of the Board (in number of cells).
-
-    - Create an array of Cells from the **Cell** class that will be used for the board. 
-
-    - The constructor will set the **size** of the board and create a board based on the width and height.
-    
-    - Create a **GenerateBoard** function to create new cells with a set coordinate and add it to the board array.
-    
-    - Create a **getRandomNumber** function to return a random cell based on the board size (provides easy access later).
 
 ```typescript
 export class Board {
@@ -348,17 +341,20 @@ getRandomNumber() : number
 return Math.floor(Math.random() * this.board.length);
 }
    ```
+
+3. In the **Board class** 
+    - Create width and height variables. These are used to set the size of the Board (in number of cells).
+
+    - Create an array of Cells from the **Cell** class that will be used for the board. 
+
+    - The constructor will set the **size** of the board and create a board based on the width and height.
+    
+    - Create a **GenerateBoard** function to create new cells with a set coordinate and add it to the board array.
+    
+    - Create a **getRandomNumber** function to return a random cell based on the board size (provides easy access later).
+
+
 Add:
-
-4. In the **BoardController**
-
-   - create three properties in the propsDefiniton. This gives us external access to link created entities.
-   
-   - **CellTemplate** links to the **Cell Asset Template**
-   
-   - **RefPos** links to **RefPos** in the World **Hierarchy**
-   
-   - spacing is a default property to create proper spacing on the board.
 
 ```typescript
 import { Component, Entity, Player, NetworkEvent, PropTypes, Vec3, Quaternion, AssetContentData, MeshEntity, SpawnController } from "horizon/core";
@@ -378,14 +374,19 @@ class BoardController extends Component<typeof BoardController> {
 Component.register(BoardController);
    ```
 
+4. In the **BoardController**
+
+   - Create three properties in the propsDefiniton. This gives us external access to link created entities.
+   
+   - **CellTemplate** links to the **Cell Asset Template**
+   
+   - **RefPos** links to **RefPos** in the World **Hierarchy**
+   
+   - spacing is a default property to create proper spacing on the board.
+
+
+
 Add: (Below PropsDefinition ) 
-- **board** variable that creates a board array with the **width** and **height** set to 5. (You can set it to whatever works well in your world.)
-
-- **cellList** will hold the spawned cells created for the board which will hold a position and a cellTemplate.
-
-- The class defines an instance of **BoardController**. This allows us to make sure that only one **boardController** is present in the world at runtime. It's set in **preStart**, usually this will run before any of the other items run in the world lifecycle.
-
-
 
 ```typescript
   board = new Board(5,5);
@@ -402,20 +403,16 @@ Add: (Below PropsDefinition )
   start() {}
   ```
 
-  Add:
+- **board** variable that creates a board array with the **width** and **height** set to 5. (You can set it to whatever works well in your world.)
 
-5. Create a function named **setUp** , in **start** call this function.
-- In **setUp**, first generate the data for the board. using **this.board.GenerateBoard()** it runs the method created earlier. 
-6. Create a **BuildBoard** function.
-- First it checks **this.props.cellTemplate** is not **null**. 
+- **cellList** will hold the spawned cells created for the board which will hold a position and a cellTemplate.
 
-- Uses a **for loop** to spawn cells first on the **y** access and then on the **x** access for the rows and columns using the width and height defined in the board class.
+- The class defines an instance of **BoardController**. This allows us to make sure that only one **boardController** is present in the world at runtime. It's set in **preStart**, usually this will run before any of the other items run in the world lifecycle.
 
-- Uses the generated board data to generate the board using the **this.world.spawnAsset()**. 
-- **this.world.spawnAsset()** takes the created **asset Template** named **cellTemplate** (the one created earlier), spawns it at a given position and rotation and then produces an array of newly spawned cells. These cells are **Cell entities** and have access to the class methods and anything defined in the **cellTemplate** **Root Object** in this case the **Floor**. 
 
-- The cells are added to the **CellList** array defined at the top of the class, for use within the code.
 
+
+Add:
 
 ```typescript
  start() {
@@ -469,24 +466,45 @@ this.setUp();
 }
         
    ```
+
+5. Create a function named **setUp**, in **start** call this function.
+- In **setUp**, first generate the data for the board. Using **this.board.generateBoard()** it runs the method created earlier.
+
+6. Create a **buildBoard** function.
+- First it checks **this.props.cellTemplate** is not **null**. 
+
+- Uses a **for loop** to spawn cells, first on the **y** axis and then on the **x** axis for the rows and columns using the width and height defined in the board class.
+
+- Uses the board data to generate the board using the **this.world.spawnAsset()**. 
+- **this.world.spawnAsset()** takes the created **asset Template** named **cellTemplate** (the one created earlier), spawns it at a given position and rotation and then produces an array of newly spawned cells. These cells are **Cell entities** and have access to the class methods and anything defined in the **cellTemplate** **Root Object** in this case the **Floor**. 
+
+- The cells are added to the **CellList** array defined at the top of the class, for use within the code.
+
+
+
 7. Save the script and return to the World Editor.
 
-8. Attach the **BoardContorller.ts** to the **board** object in the **Hierarchy**. 
+
 
  ![Alt text](images/wd61.png)
 
-8. Click the slot for the refPos add the refPos from the **Hierarchy**
+8. Attach the **BoardContorller.ts** to the **board** object in the **Hierarchy**. 
+
+  
 
 ![Alt text](images/wd60.png)
 
-9. Click to add or drag from the asset folder to the slot.
+9. Click the slot for the refPos. Add the refPos from the **Hierarchy**
+  
+   Click to add or drag from the asset folder to the slot.
 
-10. **spacing** has a default, so nothing to do here.
+   **spacing** has a default, so nothing to do here.
 
-Hit **Play**. You can now see the board of Cells! (You can delete all the cells from earlier)
+
 
 ![Alt text](images/wd62.png)
 
+Hit **Play**. You can now see the board of Cells! (You can delete all the cells from earlier)
 
    
 That's it. You have a procedurally generated board! 
@@ -500,7 +518,7 @@ At this point you can take a break or continue to make a procedurally generated 
 
 ## Update the Asset Template in the Horizon World Editor
 
-This part shows how to update the **Asset Template** in Horizon Worlds. Update the scripts to generate the maze.
+This part shows how to update the **Asset Template** in Horizon Worlds to generate the maze.
 
 ## Step 1: Update the Asset Template
 ![Alt text](images/wd63.png)
@@ -512,14 +530,16 @@ This part shows how to update the **Asset Template** in Horizon Worlds. Update t
 
 ## Step 2: Place a cube shape in the Template
 
-1. **Build** → **Shape** → Cube.  **Drag** or **Right click** and place the cube in the Edit template scene.
+
 
 ![Alt text](images/wd65.png)
 
-2. Configure the cube’s properties.
+1. **Build** → **Shape** → Cube.  **Drag** or **Right click** and place the cube in the Edit template scene.
 
 
 ![Alt text](images/wd67.png)
+
+2. Configure the cube’s properties.
 
 - **name**: `N`
 - **position** `x: 0,y :1.47, z: 1.50`
@@ -564,26 +584,21 @@ The cell should now look like this:
 ![Alt text](images/wd71.png)
 
 ---
-5. Save the changes. Return to the editor. Press **play** the board is now spawning cell blocks.
+
 
 ![Alt text](images/wd73.png)
 
-You can drag a cell from the **Asset Library** to see it as well.
+5. Save the changes. Return to the editor. Press **play** the board is now spawning cell blocks.
+
+
 
 ![Alt text](images/wd72.png)
+
+You can drag a cell from the **Asset Library** to see it as well.
 
 ## Step 2: Update the scripts
 
 Add:
-1. In **Cell.ts** , create seven variables all with a default value. 
-    - **hasBeenVisited**  helps the board keep track of the cells during creation.
-    
-    - **north, south, east, west** correspond to the **cell Template Asset walls created with N, S, E, W**. 
-    
-    - **Below the class constructor** , create a **returnWalls** function to reference these walls
-    
-    - The walls data will be generated by the **GenerateBoard** function in **Board.ts**.
-
 ```typescript
 
 hasBeenVisited = false;
@@ -616,6 +631,17 @@ west : boolean = true;
     }
 
 ```
+
+1. In **Cell.ts** , create seven variables all with a default value. 
+    - **hasBeenVisited**  helps the board keep track of the cells during creation.
+    
+    - **north, south, east, west** correspond to the **cell Template Asset walls created with N, S, E, W**. 
+    
+    - **Below the class constructor** , create a **returnWalls** function to reference these walls
+    
+    - The walls data will be generated by the **generateBoard** function in **Board.ts**.
+
+
 
 4. In **Board.ts**, update the **generateBoard** method
       - The function will now access the information in the board array of cells and create the walls for the maze.
@@ -814,31 +840,18 @@ The last thing to do is create a cell reference point so you can spawn a door or
 
 ---
 
+
+
+![Alt text](images/wd75.png)
+
+
 6. Create a Coin
    - Use any shape from the shapes 
    - Change the color property to whatever you like. (this is just to test out the **cellSpawnPoint**)
 
-![Alt text](images/wd75.png)
 ---
 
 Add:
-
-7. In **BoardController.ts** 
-
-    - Add a property to reference the external **Coin** entity
-
-8. Add a **setupCoinPosition** function
-
-   - It creates a random number based on the cell board.
-
-   - Checks the cellTemplate children exist.
-
-   - loops through all the children for the cell entity and finds the **cellSpawnRefPosition** that you created.
-
-   - Sets the coin to this position.
-    
-   - Below the walls set up in the **BuildBoard** function, call the **setupCoinPosition** function
-
 
 ```typescript
  static propsDefinition = {
@@ -879,6 +892,25 @@ for(var x = 0; x < cellRefPoint.length; x++)
 
 ```
 
+7. In **BoardController.ts** 
+
+    - Add a property to reference the external **Coin** entity
+
+8. Add a **setupCoinPosition** function
+
+   - It creates a random number based on the cell board.
+
+   - Checks the cellTemplate children exist.
+
+   - Loops through all the children for the cell entity and finds the **cellSpawnRefPosition** that you created.
+
+   - Sets the coin to this position.
+    
+   - Below the walls, set up in the **buildBoard** function, call the **setupCoinPosition** function
+
+
+
+
 That's it! Return to the World Editor
 
 9. Remember to add the coin reference to the external variable slot on the *board entitity* in the **Hierarchy** with the **BoardController** script.
@@ -897,7 +929,7 @@ You’ve just learned the essentials of **Asset Templates** — what they are, h
 
 With these tools, you can start building smarter, faster, and more creatively. 
 
-And don’t keep those creations to yourself! It would be wonderful to see what you come up with. Share your worlds, and ideas in the **community forums** so we can all get inspired.
+And don’t keep those creations to yourself! It would be wonderful to see what you come up with. Share your worlds, and ideas in the **community forums**, so we can all get inspired.
 
 Thanks for following along! 
 
@@ -977,16 +1009,16 @@ class BoardController extends Component<typeof BoardController> {
                 
             
          this.cellList.push(obj);
-         console.log(this.cellList.length);
+       
 
                 });
-              console.log(cellIndex);
+             
          
             }
                cellIndex++;
        }
     }
-        console.log('SimpleSpawn: spawning complete. objList size='+this.cellList.length);
+       
 }
 
 setupCoinPositions()
@@ -1005,7 +1037,7 @@ for(var x = 0; x < cellRefPoint.length; x++)
          
    if( spawnPointName === "CellSpawnPoint"){
   this.props.coin?.position.set( spawnPoint.position.get());
-  console.log("place item");
+  
      }
     }
    }

@@ -16,9 +16,12 @@ Here’s a quick preview of the result in action:
 
 ## Step 1: Prepare Blender
 
-1. [Download Blender](https://www.blender.org/download/) (latest version). If you don't already have it installed.
-2. Switch to **Layout Workspace** for easy modelling if you are not already in the workspace.
+1. [Download Blender](https://www.blender.org/download/) (latest version 4.5). If you don't already have it installed.
+
 ![Alt text](images/wd1.png)
+
+2. Switch to **Layout Workspace** for easy modelling, if you are not already in the workspace.
+
 3. Open Blender → Delete default cube (`X` → Delete).
 
 
@@ -34,23 +37,30 @@ Here’s a quick preview of the result in action:
    - **Segments:** 32 (can reduce later for performance).
    - **Rings:** 16.
 
-   ![Alt text](images/wd3.png) 
+  ![Alt text](images/wd3.png) 
 
 3. Scale up: `S` → type `50` → `Enter` (or larger as needed).
 
 ![Alt text](images/wd4.png)
 
 4. Flip Normals:
-   - Press **Tab** Go to **Edit Mode** → Select All (`A`).
+   - Press **Tab**. Go to **Edit Mode**
+
+![Alt text](images/wd5.png)
+
+   - Select All (`A`).
    - `Alt + N` → **Flip**.
+
 
 ---
 
 ## Step 3: Convert Sphere to a Dome
-![Alt text](images/wd5.png)
-1. In **Edit Mode**, enable **Face Select**.
+
+
 
 ![Alt text](images/wd6.png)
+
+1. In **Edit Mode**, enable **Face Select**.
 
 2. Select the **bottom half** (box select or circle select).
 
@@ -58,9 +68,9 @@ Here’s a quick preview of the result in action:
 
 3. `X` → **Delete Faces**.
 
-4. Now you have an open hemisphere dome.
-
 ![Alt text](images/wd9.png)
+
+4. Now you have an open hemisphere dome.
 
 ---
 
@@ -68,7 +78,7 @@ Here’s a quick preview of the result in action:
 
 ![Alt text](images/wd10.png)
 
-1. `Ctrl + A` → **Apply All Transforms** (Location, Rotation, Scale).  
+1. Press **Tab**. Go to **Object Mode**, `Ctrl + A` → **Apply All Transforms** (Location, Rotation, Scale).  
    Ensures correct scale when importing into Horizon.
 
 ---
@@ -83,7 +93,7 @@ Here’s a quick preview of the result in action:
 
 - In **Material Properties**:
 
-  1. Click **+ New** → Rename to **Skydome_material** → Use Default Base Colour: white.
+  1. Click **+ New** → Rename to **Skydome** → Use Default Base Colour: white.
 
 ![Alt text](images/wd14.png)
 
@@ -96,9 +106,9 @@ Here’s a quick preview of the result in action:
    - **Size:** `2048 x 2048` (power of 2).  
    - **Color:** Black (default is fine).  
 
-  4. Click **OK**.  
+  4. Click **New Image**.  
 
-  5. In the Image Texture node, click **Select** so it’s active. (Don't connect yet)
+  5. Make sure the Image Texture node is **Selected**, so it’s active. It should have a white ouline. (Don't connect yet.)
  
 - Best Practice: Use **one material** for performance. You can swap colours in code. 
 
@@ -117,11 +127,11 @@ Here’s a quick preview of the result in action:
 
 3. Set **Ratio**: 0.5 (50% poly reduction).
 
- ![Alt text](images/wd18.png)
+ ![Alt text](images/wd18a.png)
 
 4. Apply modifier.
 
-5. Check poly count: Top bar → **Object Properties → Statistics**.  
+5. Check face count, it should reduce and still look good.  
    This is a small model, but it is still good practice!
 
 6. Save your file.
@@ -139,7 +149,7 @@ Here’s a quick preview of the result in action:
 
 3. Press `U` → **Smart UV Project**.
 
-4. Accept defaults → Done.
+4. Accept defaults → Unwrap.
 
 ---
 
@@ -160,6 +170,8 @@ Here’s a quick preview of the result in action:
 3. With the material and the Image Texture node active:  
    - Click **Bake**.
 
+Baking the texture is a way to simplify layers created in Blender. You could think of it as taking a screenshot of your material and flattening it into one simple picture, so a Horizon World can use it.
+
  ![Alt text](images/wd24.png)
 
 4. When done, in the **UV/Image Editor**, save the image:  
@@ -176,7 +188,7 @@ You now have a **PNG texture** with your flat color baked.
 
 1. In **Shader Editor**:  
    - Plug your `Image Texture` node (`Skydome_BR.png`) into **Base Color** of the Principled BSDF.  
-   - Remove all other nodes except the **Principled BSDF** and the **Image Texture**.  
+   - There are three connected nodes **Material Output**, **Principled BSDF** and the **Image Texture**.  
 2. Your material is now **texture-based** (so Horizon can read it).
 
  ![Alt text](images/wd26.png)
@@ -194,9 +206,10 @@ You now have a **PNG texture** with your flat color baked.
 
 2. Settings:
    - **Scale:** 1.00
-   - **Apply Transform**
-   - **Path Mode:** Copy (click **Embed Textures** if using any)
+   - **Path Mode:** : **Auto**
    - **Limit To:** Selected Objects
+   
+   N.B. Other defaults are fine.
 3. Save as `Skydome.fbx`.
 
 ---
@@ -220,7 +233,8 @@ Go to the web portal for your creator account [Horizon World Creator assets page
 
 1. Click → **Import**.
 
-![Alt text](images/wd28.png)
+
+![Alt text](images/wd28a.png)
 
 2. Upload the two files:
    - **Skydome.fbx**
@@ -242,11 +256,12 @@ The next part of this tutorial shows how to set up the **Dynamic Skydome** in Ho
 1.  **Drag** or **Right click** and place the dome in the world.
   (you should see the skydome model referenced in the Hierarchy)
 
-  **Press F** to zoom out and see the skydome.
+  
 
 ![Alt text](images/wd32.png)
 
-2. Move the skydome’s **position** property, if it is too high.
+2. **Press F** to zoom out and see the skydome. Move the skydome’s **position** property, if it is too high.
+
 
 
 That's it. It's time to Code!
@@ -264,7 +279,7 @@ Create a `Dynamic Sky Controller ` script that:
 
 ![Alt text](images/wd34.png)
 1.  **Attach** script to the skydome.
-2.  **Double click** the script `Dynamic Sky Controller ` script to open in your Code Editor.
+2.  **Double click** the `DynamicSkyController ` script to open in your Code Editor.
 
 
 ## Step 3: 
@@ -290,7 +305,7 @@ The code needs to do three things:
 At the **top** of the DynamicSkyController class.
 
 Add: 
-1.  Create an array of colours.
+
 ```typescript
 //Sky Colours
 private skyColours = [ new hz.Color(1,0,1), //Red
@@ -299,24 +314,25 @@ private skyColours = [ new hz.Color(1,0,1), //Red
      new hz.Color(1,1,0), //Yellow
      ]
 
-    
-
 ```
+
+1.  Create an array of colours.
+
 N.B. You can add as many colours as you want or different colours. It's up to you!
 
 ---
 
 Add:
 
-2. A number property to access the colours in the array.
 ```typescript
  private currentSkyNumber = 0;
 ```
+
+2. A number property to access the colours in the array.
+
 ---
 
 Add:
-
-3. Create a **const colour variable** from one of the colours in the array. 
 
 ```typescript
 
@@ -324,11 +340,13 @@ start() {
  const selectedColour = this.skyColours[this.currentSkyNumber];
 }
 ```
+3. Create a **const colour variable** from one of the colours in the array. 
+
+
 ---
 
 Add:
 
-4. Access the mesh of the entity (skydome) by casting it as **MeshEntity** and access the **tintColor** property of this entity. Set it to change with **selectedColour**.
 ```typescript
 
 start() {
@@ -340,28 +358,23 @@ start() {
 }
 ```
 
+4. Access the mesh of the entity (Skydome) by casting it as **MeshEntity** and access the **tintColor** property of this entity. Set it to change with **selectedColour**.
+
+
 ---
 ## Test the skydome change effect.
 1. **ctrl + S** to save and return to the editor.
-2. **Press play** in Build mode.
-3. Check the Skydome has changed colour. It should be red if your **currentSkyNumber** is set to 0: 
 
 
 ![Alt text](images/wd35.png)
 
+2. **Press play** in Build mode.
+3. Check the Skydome has changed colour. It should be red if your **currentSkyNumber** is set to 0: 
+
+
 ---
 Add: 
 
-5. The code needs to run more than once.
-Let's create a new function to do this.
-
-- Create a function called **applySkyTint**
-
-- Move the code from start into this function
-
-- In start call this **applySkyTint**
-
-- Return to the world and test the dome changes. 
 
 ```typescript
 start() {
@@ -379,20 +392,20 @@ this.applySkyTint();
 }
 ```
 
+5. The code needs to run more than once.
+Let's create a new function to do this.
+
+- Create a function called **applySkyTint**
+
+- Move the code from start into this function
+
+- In start call **applySkyTint**
+
+- Return to the world and test the dome changes. 
+
+
 ---
 Add: 
-
-6. Create a timing function
-
-- Create a function called **scheduleNextSkyColour**
-
-- It uses a timer set to 3 seconds, to get a random number within the upper limit of the **skyColours.length** and calls the **applySkyTint** function.
-
-- In **start** call this **scheduleNextSkyColour** function.
-
-- Return to the world and test the dome changes.
-
-- It should change twice. Once from the **applySkyTint** function call and 3 seconds later change again from the **scheduleNextSkyColour** function. 
 
 ```typescript
 start() {
@@ -411,14 +424,22 @@ start() {
     }, 3000);
   }
 ```
+
+6. Create a timing function
+
+- Create a function called **scheduleNextSkyColour**
+
+- It uses a timer set to 3 seconds (you can change this), to get a random number within the upper limit of the **skyColours.length** and calls the **applySkyTint** function.
+
+- In **start** call this **scheduleNextSkyColour** function.
+
+- Return to the world and test the dome changes.
+
+- It should change twice. Once from the **applySkyTint** function call and 3 seconds later change again from the **scheduleNextSkyColour** function. 
+
+
 ---
 Add: 
-
-7. Call the function **scheduleNextSkyColour** within the method. 
-
-This allows the method to continuously run by calling itself from within the function.
-
-
 
 ```typescript
 //change colours randomly at a set time
@@ -432,6 +453,12 @@ This allows the method to continuously run by calling itself from within the fun
     }, 3000);
   }
 ```
+
+7. Call the function **scheduleNextSkyColour** within the method. 
+
+This allows the method to continuously run by calling itself from within the function.
+
+
 ---
 
 ## Summary
@@ -448,14 +475,7 @@ Helper Links to Learn More:
 
 Thanks for reading, I hope you find this tutorial useful. Comments are welcome as I am learning too!
 
-## Demo
-
-Here’s a quick preview of the result in action:
-
-![Skydome Demo](images/wdskydome-demo.gif)
-
-
-
+Happy Building!
 
 Full script: 
 ```typescript
