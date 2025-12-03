@@ -18,7 +18,7 @@ By the end, you’ll understand:
 - How to attach and propagate script updates across worlds.
 - How to manage and maintain version control for the asset template.
 
-![Asset Template](/images/asset-template-sample.jpg "Sample")
+![Asset Template](images/street-light/asset-template-sample.jpg "Sample")
 
 ### Prerequisites and Expectations
 
@@ -76,11 +76,11 @@ Now let’s build an interactive street light using Asset Templates.
 
 #### Components
 
-![Asset Template Components](/images/asset-template-components.jpg "Sample")
+![Asset Template Components](images/street-light/asset-template-components.jpg "Sample")
 
 #### End Result
 
-![Asset Template Template](/images/asset-template-template.jpg "Sample")
+![Asset Template Template](images/street-light/asset-template-template.jpg "Sample")
 
 ### Step 2 – Add the Script
 
@@ -259,10 +259,10 @@ Component.register(LightColorChanger);
 ### Step 3 - Create Template
 
 1. Group them into an **Asset Template** (right-click → Create Asset → choose Template).
-![Asset Template](/images/asset-template-create-asset.jpg "Sample")
+![Asset Template](images/street-light/asset-template-create-asset.jpg "Sample")
 
 2. Rename it "Street Light" and Create.
-![Asset Template](/images/asset-template-create-asset-2.jpg "Sample")
+![Asset Template](images/street-light/asset-template-create-asset-2.jpg "Sample")
 
 ### Step 4 - Attach Script and Test
 
