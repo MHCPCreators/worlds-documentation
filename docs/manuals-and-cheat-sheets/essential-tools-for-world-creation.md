@@ -3,8 +3,6 @@ author: Quadra01
 # Essential Tools for World Creation: Light, Interaction, Audio and Level Design
 *Details lighting techniques, collider setup for interaction, and audio integration and level design fundamentals.*
 
-<img width="1536" height="1024" alt="Essential Tools for World Creation" src="https://github.com/user-attachments/assets/84b77fd6-ad4e-40df-b1c7-1d45f192c94b" />
-
 ---
 
 ## Introduction

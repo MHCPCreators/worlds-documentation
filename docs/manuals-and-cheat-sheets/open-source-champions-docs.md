@@ -9,6 +9,7 @@ Hundreds of creators from more than a dozen countries submitted their best remix
 ## Best Lighting Tutorials
 
 - [Lighting Your World Like a Pro - A Step-by-Step Process by virtualpebble](../../../docs/manuals-and-cheat-sheets/lighting-process/)
+- [Essential Tools for World Creation: Light, Interaction, Audio and Level Design by Quadra01](./essential-tools-for-world-creation.md)
 
 ## Best Creating and Importing Assets Tutorials
 
